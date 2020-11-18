@@ -1,3 +1,9 @@
+---
+description: >-
+  SIREN is a distributed protocol for creating, trading, and redeeming
+  fully-collateralized options contracts for any ERC-20 token on Ethereum.
+---
+
 # Welcome
 
 ## Introducing SIREN
