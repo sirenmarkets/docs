@@ -2,6 +2,12 @@
 
 * [SIREN Protocol](README.md)
 
+## Community
+
+* [Medium](https://sirenmarkets.medium.com/)
+* [Telegram](https://t.me/sirenmarkets)
+* [Twitter](https://twitter.com/sirenprotocol)
+
 ## FAQ
 
 * [What are calls and puts?](faq/what-are-calls-and-puts.md)
