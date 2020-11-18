@@ -4,9 +4,9 @@ description: >-
   fully-collateralized options contracts for any ERC-20 token on Ethereum.
 ---
 
-# Welcome
+# SIREN Protocol
 
-## Introducing SIREN
+## About SIREN
 
 The developers and designers at SIREN have been working on a protocol for decentralized options trading, and we’d like to share our thoughts on it with you here. Options are a financial primitive from which one can build many different more complex financial instruments. At their core, options give a trader the choice to buy or sell an asset at a predetermined price at a known time in the future. This is useful for protecting yourself \(a.k.a hedging\) against possible price changes in the asset, as well as speculating on these price changes.
 

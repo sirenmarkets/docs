@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome](README.md)
+* [SIREN Protocol](README.md)
 
 ## FAQ
 
@@ -17,4 +17,9 @@
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [MetaMask](https://metamask.io/)
+
+## Wallet Security
+
+* [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
+* [Trezor One](https://shop.trezor.io/product/trezor-one-white)
 
