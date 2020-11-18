@@ -11,3 +11,10 @@
 
 * [The SIREN Liquidity Provider Program](announcements/untitled.md)
 
+## Resources
+
+---
+
+* [Learn about Ethereum](https://ethereum.org/en/learn/)
+* [MetaMask](https://metamask.io/)
+
