@@ -26,3 +26,7 @@
 * [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
 * [Trezor One](https://shop.trezor.io/product/trezor-one-white)
 
+## Developers
+
+* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+
