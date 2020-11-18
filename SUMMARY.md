@@ -41,3 +41,7 @@
 
 * [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/the-siren-liquidity-provider-program-1e9841746ff2)
 
+---
+
+* [MetaMask Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
+
