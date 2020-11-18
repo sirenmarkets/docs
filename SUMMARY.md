@@ -16,6 +16,9 @@
 ---
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
+
+## Wallets
+
 * [MetaMask](https://metamask.io/)
 
 ## Wallet Security
