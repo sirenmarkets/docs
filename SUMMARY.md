@@ -9,5 +9,5 @@
 
 ## Announcements
 
-* [Untitled](announcements/untitled.md)
+* [The SIREN Liquidity Provider Program](announcements/untitled.md)
 
