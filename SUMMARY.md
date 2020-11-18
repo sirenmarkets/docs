@@ -1,6 +1,6 @@
 # Table of contents
 
-* [SIREN Protocol](README.md)
+* [The SIREN Protocol](README.md)
 
 ## Community
 
