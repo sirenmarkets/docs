@@ -7,9 +7,13 @@
 * [What are calls and puts?](faq/what-are-calls-and-puts.md)
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
 
-## Announcements
+## Developers
 
-* [The SIREN Liquidity Provider Program](announcements/untitled.md)
+* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+
+## Governance
+
+* [SIREN Improvement Proposals](https://github.com/sirenmarkets/SIPs)
 
 ## Resources
 
@@ -26,7 +30,7 @@
 * [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
 * [Trezor One](https://shop.trezor.io/product/trezor-one-white)
 
-## Developers
+## Announcements
 
-* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+* [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/the-siren-liquidity-provider-program-1e9841746ff2)
 
