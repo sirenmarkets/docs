@@ -36,11 +36,3 @@ We believe that in these early days of Ethereum and DeFi less is more, so we des
 
 There will be a governance token for Siren Markets, called SIREN. This token allows holders to create new option markets, and determine the fee rate for writing, closing, and redeeming an option. These fees accrue to SIREN token holders. Upon launch these fees will be set to 0 to reduce the friction in using Siren options, but will likely increase if the DeFi community adopts Siren options.
 
-#### TODO; Add closing content and what reader's should do next
-
-Join community
-
-Read how to get started trading options
-
-Etc.
-
