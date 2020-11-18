@@ -27,6 +27,7 @@
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+* [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 
 ## Wallets
 
@@ -40,8 +41,4 @@
 ## Announcements
 
 * [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/the-siren-liquidity-provider-program-1e9841746ff2)
-
----
-
-* [MetaMask Swaps](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 
