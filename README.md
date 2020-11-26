@@ -4,7 +4,7 @@ description: >-
   fully-collateralized options contracts for any ERC-20 token on Ethereum.
 ---
 
-# The SIREN Protocol
+# SIREN
 
 ## About SIREN
 
