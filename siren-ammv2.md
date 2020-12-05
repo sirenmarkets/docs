@@ -72,7 +72,7 @@ There are factors that reduce LP risk:
 1. Slippage creates a separate revenue stream that offsets potential exercise losses.
 2. Diversification. Since a single AMM can trade multiple markets, LPs exercise risk is spread across multiple strike prices and expirations.
 
-### **LP rewards sources of yield**
+### **LP rewards / sources of yield**
 
 LPs earn yield in three ways:
 
