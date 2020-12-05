@@ -21,7 +21,8 @@
 
 ## Governance
 
-* [SIREN Improvement Proposals](https://github.com/sirenmarkets/SIPs)
+* [Discourse](https://gov.sirenmarkets.com/)
+* [Boardroom](https://app.boardroom.info/protocols/siren)
 
 ## Resources
 
