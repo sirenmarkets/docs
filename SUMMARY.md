@@ -43,5 +43,5 @@
 
 ## Announcements
 
-* [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/the-siren-liquidity-provider-program-1e9841746ff2)
+* [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/expanding-the-siren-lpp-c69969e25d41)
 
