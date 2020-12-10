@@ -26,8 +26,6 @@
 
 ## Resources
 
----
-
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
