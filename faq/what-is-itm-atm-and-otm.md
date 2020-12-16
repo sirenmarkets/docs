@@ -10,3 +10,7 @@ An ATM option has the greatest uncertainty. It is the most sensitive to changes 
 
 An OTM option begs for a very large rise in the price of the cryptocurrency. If you get a big enough move in the cryptocurrency, an OTM call can deliver a much higher percentage profit than an ITM or ATM call. And if the cryptocurrency price falls dramatically, the loss on the OTM call will be smaller than on an ATM or ITM call. But remember that a big move in the cryptocurrency price is less likely than a smaller move, and OTM options will expire worthless if the move in the cryptocurrency isn't big enough.
 
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
+

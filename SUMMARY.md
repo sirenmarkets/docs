@@ -14,6 +14,7 @@
 * [What are calls and puts?](faq/what-are-calls-and-puts.md)
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
 * [What are the greeks?](faq/what-are-the-greeks.md)
+* [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
 
 ## Developers
 

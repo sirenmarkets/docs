@@ -82,8 +82,6 @@ LPs earn yield in three ways:
 
 ![](.gitbook/assets/image.png)
 
-**LAST UPDATED:** 5 December 2020
-
 _NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._  
   
   

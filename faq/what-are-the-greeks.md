@@ -36,3 +36,7 @@ From a purely theoretical standpoint calls and puts would be perfectly opposite 
 
 Sometimes there may be minuscule differences between the greeks of puts and calls at the same strike. But generally speaking, gamma, theta, and vega are the same for long calls and long puts. A fair wager would be that there is no way to make or save money by playing for any differences.
 
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
+

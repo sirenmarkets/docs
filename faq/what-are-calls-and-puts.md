@@ -38,3 +38,7 @@ Selling a put short is the mirror image of buying a put. Like a short call, a sh
 
 When trading options, you have to refine your speculation to incorporate how much you think the cryptocurrency may move, how much time it will take for the cryptocurrency to move, and how implied volatility might change. Understanding the trade-offs in options can help you understand how and why your option position is acting the way it is.
 
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
+
