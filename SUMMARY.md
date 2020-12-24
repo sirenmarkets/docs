@@ -22,8 +22,9 @@
 
 ## Governance
 
-* [Discourse](https://gov.sirenmarkets.com/)
 * [Boardroom](https://app.boardroom.info/protocols/siren)
+* [Discourse](https://gov.sirenmarkets.com/)
+* [SIPs](https://sips.sirenmarkets.com/)
 
 ## Resources
 
