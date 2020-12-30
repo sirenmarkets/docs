@@ -23,7 +23,7 @@ A rational buyer would only trigger an exercise if the strike price is lower tha
 LPs should maintain situational awareness and understand their risks. Here are a few examples:
 
 * **A liquidity pool only has collateral at time of deposit and no trading activity while staking** = LP receives back same amount of deposited collateral upon withdrawal + accumulated SI rewards
-* **A liquidity pools has wTokens or trading activity while staking, but all OTM** = LP gets back less collateral upon withdrawal compared to amount of originally deposited collateral + wTokens \(at expiration wTokens unlock the difference missing from their collateral plus option writing premiums/yield\)  + accumulated SI rewards
+* **A liquidity pool has wTokens or trading activity while staking, but all OTM** = LP gets back less collateral upon withdrawal compared to amount of originally deposited collateral + wTokens \(at expiration wTokens unlock the difference missing from their collateral plus option writing premiums/yield\)  + accumulated SI rewards
 * **A liquidity pool has wTokens or trading activity while staking, some ITM** = LP gets back less collateral upon withdrawal compared to amount of originally deposited collateral + wTokens \(at expiration wTokens unlock the some of their missing collateral plus some payment token from options exercise. There may or may not be loss.\)  + accumulated SI rewards
 * **A liquidity pool has trading activity while staking, mostly ITM** = same as above, more chance of loss, but still not guaranteed loss \(depends on the premium at which bTokens were sold to buyers that later exercised\)
 
