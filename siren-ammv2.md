@@ -51,8 +51,6 @@ Withdrawing capital involves the following steps:
 
 When an LP withdraws their capital, the AMM might have any combination of collateral token, payment token, active b/wTokens and expired unclaimed b/wTokens. Pro-rata w/bTokens are sent to their address.
 
-![](https://docs.google.com/drawings/u/0/d/s9a8nH8V_7Jtu9CB-HVwIlg/image?w=506&h=361&rev=1&ac=1&parent=1fJw3DA1aLUfiivW16HC8TUGruvmxQKmzL7h0UvuD9gU)
-
 ### **Pricing**
 
 The price that the AMM quotes for each trade is determined by two components: marginal price and slippage. The marginal price is calculated on-chain based on a formula that takes as parameters the underlying price, time to expiration, option strike and implied volatility. In addition, each trade incurs slippage that is based on the size of the trade and available assets in the pool - the larger the trade relative to the size of the pool the higher the slippage. LPs benefit from this slippage as it provides a revenue stream in addition to collecting option premiums.
