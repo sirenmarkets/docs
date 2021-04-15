@@ -9,11 +9,11 @@ description: The SIREN Automated Market Maker
 The SIREN Automated Market Maker \(AMM\) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
 
 * **Trading multiple markets from a single pool.** AMM can trade multiple markets that share the same collateral and payment assets. For example, it can trade multiple strikes of WBTC calls.
-* **Passive LP participation.** In AMM, liquidity providers \("LPs"\) don’t need to worry about rolling their liquidity to another pool at expiration. As long as the AMM has active markets, LPs can keep their deposits.
+* **Passive LP participation.** With AMM, liquidity providers \("LPs"\) don’t need to worry about rolling their liquidity to another pool at expiration. As long as the AMM has active markets, LPs can keep their deposits.
 * **Solving theta decay loss.** Because the price is quoted using a Black-Scholes model, AMM is time-decay-aware.
 * **No arbitrage needed.** There is no need for arbitrage in order to quote reasonable prices.
 
-SIREN AMM uses on-chain Black-Scholes approximation coupled with a price Oracle \(Chainlink\). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a pool is being dynamically created for each trade based on the current oracle price.
+SIREN uses on-chain Black-Scholes approximation coupled with a price Oracle \(Chainlink\). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a pool is being dynamically created for each trade based on the current oracle price.
 
 ### **How it works**
 
@@ -37,7 +37,7 @@ From a technical perspective, AMM functions in the following stepwise fashion:
 Depositing capital involves the following steps:
 
 1. Claiming all expired unclaimed wTokens in order to release their locked collateral or payment tokens into the AMM pool.
-2. Calculates total pool value as a sum of collateral + payment token + bTokens + wTokens. To calculate the value of the payment token v2 uses a price Oracle; to calculate the value of b/wTokens AMM uses the price Oracle + Black-Scholes approximation.
+2. Calculates total pool value as a sum of collateral + payment token + bTokens + wTokens. To calculate the value of the payment token AMM uses a price Oracle; to calculate the value of b/wTokens AMM uses the price Oracle + Black-Scholes approximation.
 3. Calculates the amount of LP tokens to mint.
 
 When an LP wishes to provide collateral to the pool, the pool calculates the total value of all assets on its balance in order to properly calculate the amount of new LP tokens to mint. 

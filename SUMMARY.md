@@ -1,7 +1,7 @@
 # Table of contents
 
 * [SIREN](README.md)
-* [SIREN AMMv2](siren-ammv2.md)
+* [SIREN AMM](siren-ammv2.md)
 
 ## Community
 
