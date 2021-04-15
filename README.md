@@ -18,7 +18,7 @@ Please continue reading for a high-level description of the unique components we
 
 Siren uses a fully-collateralized approach to writing options that doesn’t require any oracles to function. A single MarketsRegistry contract creates and coordinates individual markets. Once a Market contract is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the smart contract.
 
-In Siren both the long and short side of the contract are tokenized. The buyer’s side \(`bToken`\) gives the holder the right to purchase or sell the underlying asset at a predetermined [strike price](https://www.investopedia.com/terms/s/strikeprice.asp)The seller’s/writer’s side \(`wToken`\) allows the holder to withdraw the collateral \(if the option was not exercised\) or withdraw the exercise payment \(if the option was exercised\) from the contract after expiration.
+In Siren both the long and short side of the contract are tokenized. The buyer’s side \(`bToken`\) gives the holder the right to purchase or sell the underlying asset at a predetermined [strike price](https://www.investopedia.com/terms/s/strikeprice.asp) The seller’s/writer’s side \(`wToken`\) allows the holder to withdraw the collateral \(if the option was not exercised\) or withdraw the exercise payment \(if the option was exercised\) from the contract after expiration.
 
 When you buy a put the on-chain token amount is multiplied by the strike. For example, a 1 WBTC $20K PUT will result in 20,000 bTokens. For the same reason, a put is just a reversed-assets call \(e.g. a WBTC/USDC put is actually a USDC/WBTC call\).​
 
