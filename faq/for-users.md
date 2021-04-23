@@ -37,3 +37,7 @@ There are no demo accounts at this time.
 ## Is there a mobile app for SIREN?
 
 No, but you can use app.sirenmarkets.com in the mobile browser on your smartphone.
+
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Discord_](https://discord.gg/JMcDB52Y) _to those who are interested in building on top of the protocol._
