@@ -1,15 +1,13 @@
-# Table of contents
+# Table of Contents
+
+## Core Protocol
 
 * [SIREN](README.md)
 * [SIREN AMM](siren-ammv2.md)
 
-## Community
-
-* [Medium](https://sirenmarkets.medium.com/)
-* [Telegram](https://t.me/sirenmarkets)
-* [Twitter](https://twitter.com/sirenprotocol)
-
 ## FAQ
+
+### General Questions
 
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
@@ -17,6 +15,8 @@
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
 * [What are the greeks?](faq/what-are-the-greeks.md)
 * [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
+
+### Options Trading
 
 ## Developers
 
@@ -28,22 +28,38 @@
 * [Discourse](https://gov.sirenmarkets.com/)
 * [SIPs](https://sips.sirenmarkets.com/)
 
+## Community
+
+## Socials
+
+* [Medium](https://sirenmarkets.medium.com/)
+* [Discord](https://discord.gg/JMcDB52Y)
+* [Twitter](https://twitter.com/sirenprotocol)
+* [Telegram](https://t.me/sirenmarkets)
+
+
+### Recent Media
+
+* [SIRENv2 and 2Q2021 Roadmap](https://sirenmarkets.medium.com/sirenv2-and-2q2021-roadmap-91b215f1dfdc)
+* [Hotbit will launch SI on 2021.03.19](https://hotbit.zendesk.com/hc/en-us/articles/1500004302542-Hotbit-will-launch-SI-SIREN-on-March-19th-2021)
+* [SIREN joins Immunefi platform: $100,000 bug bounty program](https://twitter.com/immunefi/status/1370467332032659457)
+
 ## Resources
+
+### Wiki
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 
-## Wallets
+### Wallets
 
 * [MetaMask](https://metamask.io/)
+* [Coinbase Wallet] (https://wallet.coinbase.com/)
+* [WalletConnect] (https://walletconnect.org/)
 
-## Wallet Security
+### Wallet Security
 
 * [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
 * [Trezor One](https://shop.trezor.io/product/trezor-one-white)
-
-## Announcements
-
-* [SIREN Liquidity Provider Program](https://sirenmarkets.medium.com/expanding-the-siren-lpp-c69969e25d41)
 
