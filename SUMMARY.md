@@ -1,4 +1,4 @@
-# Table of Contents
+# Project Documentation
 
 ## Core Protocol
 
@@ -28,7 +28,7 @@
 * [Discourse](https://gov.sirenmarkets.com/)
 * [SIPs](https://sips.sirenmarkets.com/)
 
-## Community
+# Community
 
 ## Socials
 
@@ -38,27 +38,27 @@
 * [Telegram](https://t.me/sirenmarkets)
 
 
-### Recent Media
+## Recent Media
 
 * [SIRENv2 and 2Q2021 Roadmap](https://sirenmarkets.medium.com/sirenv2-and-2q2021-roadmap-91b215f1dfdc)
 * [Hotbit will launch SI on 2021.03.19](https://hotbit.zendesk.com/hc/en-us/articles/1500004302542-Hotbit-will-launch-SI-SIREN-on-March-19th-2021)
 * [SIREN joins Immunefi platform: $100,000 bug bounty program](https://twitter.com/immunefi/status/1370467332032659457)
 
-## Resources
+# Resources
 
-### Wiki
+## Wiki
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 
-### Wallets
+## Wallets
 
 * [MetaMask](https://metamask.io/)
 * [Coinbase Wallet] (https://wallet.coinbase.com/)
 * [WalletConnect] (https://walletconnect.org/)
 
-### Wallet Security
+## Wallet Security
 
 * [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
 * [Trezor One](https://shop.trezor.io/product/trezor-one-white)
