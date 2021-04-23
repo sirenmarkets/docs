@@ -1,13 +1,17 @@
-# Project Documentation
+# SIREN Protocol
 
-## Core Protocol
+## SirenSwap AMM
 
 * [SIREN](README.md)
 * [SIREN AMM](siren-ammv2.md)
 
-## FAQ
+## Developers
 
-### General Questions
+* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+
+# FAQ
+
+## General Questions
 
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
@@ -16,19 +20,15 @@
 * [What are the greeks?](faq/what-are-the-greeks.md)
 * [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
 
-### Options Trading
+## Options Trading
 
-## Developers
-
-* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+# Community
 
 ## Governance
 
 * [Boardroom](https://app.boardroom.info/protocols/siren)
 * [Discourse](https://gov.sirenmarkets.com/)
 * [SIPs](https://sips.sirenmarkets.com/)
-
-# Community
 
 ## Socials
 
