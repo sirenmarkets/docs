@@ -22,7 +22,7 @@
 
 * [What are options?](faq/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
-* [What are the greeks?](faq/what-are-the-greeks.md)
+* [What are greeks?](faq/what-are-greeks.md)
 * [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
 
 # Community
