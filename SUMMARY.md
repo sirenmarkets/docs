@@ -1,44 +1,46 @@
 # SIREN Protocol
 
-### SirenSwap AMM
+## SirenSwap AMM
 
 * [SIREN](README.md)
 * [SIREN AMM](siren-ammv2.md)
 
-### Developers
+## Developers
 
 * [Core Smart Contracts](https://github.com/sirenmarkets/core)
 
-# FAQ
+## FAQ
 
 ### General Questions
 
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
 * [Product Strength](faq/product-strength.md)
+* [How To Get Help?](faq/how-to-get-help.md)
+
+### Options Trading
+
 * [What are calls and puts?](faq/what-are-calls-and-puts.md)
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
 * [What are the greeks?](faq/what-are-the-greeks.md)
 * [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
 
-### Options Trading
-
 # Community
 
-### Governance
+## Governance
 
 * [Boardroom](https://app.boardroom.info/protocols/siren)
 * [Discourse](https://gov.sirenmarkets.com/)
 * [SIPs](https://sips.sirenmarkets.com/)
 
-### Socials
+## Socials
 
 * [Medium](https://sirenmarkets.medium.com/)
 * [Discord](https://discord.gg/JMcDB52Y)
 * [Twitter](https://twitter.com/sirenprotocol)
 * [Telegram](https://t.me/sirenmarkets)
 
-### Recent Media
+## Recent Media
 
 * [SIRENv2 and 2Q2021 Roadmap](https://sirenmarkets.medium.com/sirenv2-and-2q2021-roadmap-91b215f1dfdc)
 * [Hotbit will launch SI on 2021.03.19](https://hotbit.zendesk.com/hc/en-us/articles/1500004302542-Hotbit-will-launch-SI-SIREN-on-March-19th-2021)
@@ -46,13 +48,13 @@
 
 # Resources
 
-### Wiki
+## Wiki
 
 * [Learn about Ethereum](https://ethereum.org/en/learn/)
 * [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 
-### Wallets
+## Wallets
 
 * [MetaMask](https://metamask.io/)
 * [Coinbase Wallet] (https://wallet.coinbase.com/)
