@@ -50,20 +50,20 @@ https://www.coingecko.com/en/coins/siren
 
 ### History of the SIREN reward programs
  
-1) The first SIREN Liquidity Provider Program (LPP) ran from the beginning of December 2020 until the end of February 2020 for two pools, WBTC and the corresponding USDC; the TVL at the end of the first LPP exceeded $14MM USD, and 5MM SI tokens were released with the 3 month lockup
+1 . The first SIREN Liquidity Provider Program (LPP) ran from the beginning of December 2020 until the end of February 2020 for two pools, WBTC and the corresponding USDC; the TVL at the end of the first LPP exceeded $14MM USD, and 5MM SI tokens were released with the 3 month lockup
 https://gov.sirenmarkets.com/t/sip-2-liquidity-mining-emission-proposal/18
 https://medium.com/siren-markets/the-siren-liquidity-provider-program-1e9841746ff2
 https://medium.com/siren-markets/expanding-the-siren-lpp-c69969e25d41
 
-2) The second LPP releases 1.5MM immediately claimable SI tokens over a 13-week program (50% upfront rewards and 50% distribution over a 12 week linear schedule), starting from Feb 26 until May 28; the goal is to provide rewards across multiple different asset pools — we began with SUSHI and the respective USDC
+2 . The second LPP releases 1.5MM immediately claimable SI tokens over a 13-week program (50% upfront rewards and 50% distribution over a 12 week linear schedule), starting from Feb 26 until May 28; the goal is to provide rewards across multiple different asset pools — we began with SUSHI and the respective USDC
 https://gov.sirenmarkets.com/t/sip-6-liquidity-mining-emission-proposal-for-next-erc-20-pairing/141
 https://gov.sirenmarkets.com/t/sip-8-lpp-extension-and-vesting-schedule/157
 
-3) A Balancer Liquidity Bootstrapping Pool (LBP) event occurred on March 3-5, 2021 with the aim to distribute SI tokens to the community; we gained over 1000 unique token holders and distributed 3MM SI tokens
+3 . A Balancer Liquidity Bootstrapping Pool (LBP) event occurred on March 3-5, 2021 with the aim to distribute SI tokens to the community; we gained over 1000 unique token holders and distributed 3MM SI tokens
 https://gov.sirenmarkets.com/t/sip-7-si-token-distribution-event/146
 https://medium.com/siren-markets/si-token-distribution-event-cff0be106fc6
 
-4) SI Staking Program starts a staking pool for SI will help absorb some of the sell pressure from early liquidity providers
+4 . SI Staking Program starts a staking pool for SI will help absorb some of the sell pressure from early liquidity providers
 https://gov.sirenmarkets.com/t/sip-9-introduce-si-staking/174
 
 ![](../.gitbook/assets/image.png)
