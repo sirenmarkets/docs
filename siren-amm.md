@@ -2,7 +2,7 @@
 
 ## Overview
 
-The SIREN Automated Market Maker \(AMM\) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
+The SirenSwap Automated Market Maker (AMM) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
 
 * **Trading multiple markets from a single pool.** AMM can trade multiple markets that share the same collateral and payment assets. For example, it can trade multiple strikes of WBTC calls.
 * **Passive LP participation.** With AMM, liquidity providers \("LPs"\) don’t need to worry about rolling their liquidity to another pool at expiration. As long as the AMM has active markets, LPs can keep their deposits.
