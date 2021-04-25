@@ -1,7 +1,3 @@
----
-description: The SIREN Automated Market Maker
----
-
 # SIREN AMM
 
 ## Overview
