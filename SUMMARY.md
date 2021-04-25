@@ -1,5 +1,7 @@
 # SIREN Protocol
 
+A distributed protocol for creating, trading, and redeeming fully-collateralized options contracts for any ERC-20 token on Ethereum.
+
 ## SirenSwap AMM
 
 * [SIREN](README.md)
