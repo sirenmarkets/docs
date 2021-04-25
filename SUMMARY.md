@@ -4,7 +4,6 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 
 ## SirenSwap AMM
 
-* [SIREN](README.md)
 * [SIREN AMM](siren-ammv2.md)
 
 ## Developers
