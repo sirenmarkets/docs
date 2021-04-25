@@ -12,7 +12,7 @@ We do not provide any services to citizens and residents of the United Kingdom, 
 
 The SIREN team is committed to making the user experience as safe as possible. Our code has been audited by Quantstamp and has continuous formal verification integration via Certora. In addition, we run a bounty program for community-submitted bugs.
 
-### Security resources:
+Security resources:
 
 https://raw.githubusercontent.com/sirenmarkets/docs/master/.gitbook/assets/siren-markets-final-report.pdf
 
