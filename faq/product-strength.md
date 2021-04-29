@@ -46,6 +46,7 @@ https://www.coingecko.com/en/coins/siren
 - All private investors have a minimum one year lockup schedule and a total two year unlock schedule.
 
 ![](../.gitbook/assets/lockup-schedule-1.png)
+
 ![](../.gitbook/assets/lockup-schedule-2.png)
 
 ### History of the SIREN reward programs
