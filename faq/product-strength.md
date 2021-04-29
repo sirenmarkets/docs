@@ -34,7 +34,7 @@ SI is an ERC-20 native token. The function of the token is governance; in the fu
 - 26,000,000 SI: Previously sold and future unsold positions of investor tokens, to the extent they fully exercise their rights to purchase SI.
 - 30,000,000 SI: Ecosystem and rewards, which will benefit traders, LPs, and developers who participate in the SIREN ecosystem.
 
-![SIREN token supply split](.gitbook/assets/token-split.png)
+![](../.gitbook/assets/token-split.png)
 
 ### Circulating supply
 
@@ -45,8 +45,8 @@ https://www.coingecko.com/en/coins/siren
 - All team tokens have a minimum one year full lockup and a total four year unlock schedule.
 - All private investors have a minimum one year lockup schedule and a total two year unlock schedule.
 
-![SIREN token lockup schedule tranches](.gitbook/assets/lockup-schedule-1.png)
-![SIREN token lockup schedule cliff](.gitbook/assets/lockup-schedule-2.png)
+![](../.gitbook/assets/lockup-schedule-1.png)
+![](../.gitbook/assets/lockup-schedule-2.png)
 
 ### History of the SIREN reward programs
  
