@@ -50,6 +50,8 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 ## Wallets
 
 * [MetaMask](https://metamask.io/)
+* [Coinbase Wallet](https://wallet.coinbase.com/)
+* [WalletConnect](https://walletconnect.org/)
 * [Coinbase Wallet] (https://wallet.coinbase.com/)
 * [WalletConnect] (https://walletconnect.org/)
 
