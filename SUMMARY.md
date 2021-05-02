@@ -10,7 +10,7 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 
 * [Core Smart Contracts](https://github.com/sirenmarkets/core)
 
-# FAQ
+## FAQ
 
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
