@@ -12,8 +12,6 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 
 # FAQ
 
-## General Questions
-
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
 * [Product Strength](faq/product-strength.md)
