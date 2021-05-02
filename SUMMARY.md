@@ -10,16 +10,16 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 
 * [Core Smart Contracts](https://github.com/sirenmarkets/core)
 
-## FAQ
+# FAQ
 
-### General Questions
+## General Questions
 
 * [About SIREN](faq/about-siren.md)
 * [For Users](faq/for-users.md)
 * [Product Strength](faq/product-strength.md)
 * [How To Get Help?](faq/how-to-get-help.md)
 
-### Options Trading
+## Options Trading
 
 * [What are options?](faq/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
