@@ -1,3 +1,5 @@
+## How To Get Help?
+
 We are keen to assist you with all the questions you may have and we are always open to productive and positive discussions. Feel free to find us:
 - Become a part of our Discord community - https://discord.gg/pbNC57gvHG
 - Send us a email - hello@sirenmarkets.com
