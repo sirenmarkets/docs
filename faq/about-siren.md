@@ -1,4 +1,4 @@
-# About SIREN
+## About SIREN
 
 ## What is SIREN?
 
