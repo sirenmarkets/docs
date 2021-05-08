@@ -30,7 +30,7 @@ Initially LPs deposit a collateral asset into the SIREN AMM pool, e.g. for WBTC/
 
 When you buy a put the on-chain token amount is multiplied by the strike. For example, a 1 WBTC $50K PUT will result in 50,000 bTokens. For the same reason, a put is just a reversed-assets call (e.g. a WBTC/USDC put is actually a USDC/WBTC call).​
 
-More detailed explanation of the SirenSwap AMM and b/wTokens see at https://docs.sirenmarkets.com/siren-ammv2
+More detailed explanation of the SirenSwap AMM and b/wTokens see at https://docs.sirenmarkets.com/siren-amm
 
 ## Risks of trading options
 
