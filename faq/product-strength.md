@@ -51,7 +51,7 @@ https://www.coingecko.com/en/coins/siren
 
 #### History of the SIREN reward programs
  
-1 . The first SIREN Liquidity Provider Program (LPP) ran from the beginning of December 2020 until the end of February 2020 for two pools, WBTC and the corresponding USDC; the TVL at the end of the first LPP exceeded $14MM USD, and 5MM SI tokens were released with the 3 month lockup
+1 . The first SIREN Liquidity Provider Program (LPP) ran from the beginning of December 2020 until the end of February 2020 for two pools, WBTC and the corresponding USDC; the TVL at the end of the first LPP exceeded $14MM USD, and 1MM SI tokens were released with the 3 month lockup
 https://gov.sirenmarkets.com/t/sip-2-liquidity-mining-emission-proposal/18
 https://medium.com/siren-markets/the-siren-liquidity-provider-program-1e9841746ff2
 https://medium.com/siren-markets/expanding-the-siren-lpp-c69969e25d41
