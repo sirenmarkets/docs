@@ -2,7 +2,7 @@
 
 ## Terminology
 
-ITM stands for In The Money, ATM stands for At The Money and OTM stands for Out of The Money. These references are indicators of whether or not the option has reached the strike price (ATM), still needs to reach the strike price (OTM), or has already passed the strike price (ITM).
+ITM stands for In The Money, ATM stands for At The Money and OTM stands for Out of The Money. These references are indicators of whether or not the option has reached the strike price \(ATM\), still needs to reach the strike price \(OTM\), or has already passed the strike price \(ITM\).
 
 Whether to buy an ITM, ATM, or OTM option is a decision you have to make. An ITM option acts the most like a cryptocurrency position, being affected less by time and changes in volatility, and more by the cryptocurrency price moving up and down. An ATM option is the most sensitive to changes in the cryptocurrency price and volatility, and time passing. An OTM option requires a very large rise in the price of the cryptocurrency to be profitable for the option buyer.
 

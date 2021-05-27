@@ -1,8 +1,10 @@
+# Table of contents
+
+* [Introduction](README.md)
+
 ## SIREN AMM
 
-A distributed protocol for creating, trading, and redeeming fully-collateralized options contracts for any ERC-20 token on Ethereum.
-
-* [SirenSwap Automated Market Maker](siren-amm.md)
+* [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
 
 ## Developers
 
@@ -10,17 +12,17 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 
 ## FAQ: General
 
-* [About SIREN](faq/about-siren.md)
-* [For Users](faq/for-users.md)
-* [Product Strength](faq/product-strength.md)
-* [How To Get Help?](faq/how-to-get-help.md)
+* [About SIREN](faq-general/about-siren.md)
+* [For Users](faq-general/for-users.md)
+* [Product Strength](faq-general/product-strength.md)
+* [How To Get Help?](faq-general/how-to-get-help.md)
 
 ## FAQ: Options
 
-* [What are options?](faq/what-are-options.md)
-* [What is ITM, ATM and OTM?](faq/what-is-itm-atm-and-otm.md)
-* [What are greeks?](faq/what-are-greeks.md)
-* [What is a liquidity provider?](faq/what-is-a-liquidity-provider.md)
+* [What are options?](faq-options/what-are-options.md)
+* [What is ITM, ATM and OTM?](faq-options/what-is-itm-atm-and-otm.md)
+* [What are greeks?](faq-options/what-are-greeks.md)
+* [What is a liquidity provider?](faq-options/what-is-a-liquidity-provider.md)
 
 ## Governance
 
@@ -38,7 +40,6 @@ A distributed protocol for creating, trading, and redeeming fully-collateralized
 ## Recent Media
 
 * [SIRENv2 and 2Q2021 Roadmap](https://sirenmarkets.medium.com/sirenv2-and-2q2021-roadmap-91b215f1dfdc)
-* [Hotbit will launch SI on 2021.03.19](https://hotbit.zendesk.com/hc/en-us/articles/1500004302542-Hotbit-will-launch-SI-SIREN-on-March-19th-2021)
 * [SIREN joins Immunefi platform: $100,000 bug bounty program](https://twitter.com/immunefi/status/1370467332032659457)
 
 ## Resources

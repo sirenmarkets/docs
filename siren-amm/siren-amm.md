@@ -1,8 +1,8 @@
-# SIREN AMM
+# SirenSwap Automated Market Maker
 
 ## Overview
 
-The SirenSwap Automated Market Maker (AMM) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
+The SirenSwap Automated Market Maker \(AMM\) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
 
 * **Trading multiple markets from a single pool.** AMM can trade multiple markets that share the same collateral and payment assets. For example, it can trade multiple strikes of WBTC calls.
 * **Passive LP participation.** With AMM, liquidity providers \("LPs"\) don’t need to worry about rolling their liquidity to another pool at expiration. As long as the AMM has active markets, LPs can keep their deposits.
@@ -74,6 +74,7 @@ LPs earn yield in three ways:
 2. Slippage when traders buy or sell options
 3. SI reward tokens via the [SIREN LPP](https://sirenmarkets.medium.com/expanding-the-siren-lpp-c69969e25d41)
 
-![](.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 _NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
+
