@@ -38,7 +38,14 @@ We believe that in these early days of Ethereum and DeFi less is more, so we des
 
 There will be a governance token for Siren Markets, called SIREN. This token allows holders to create new option markets, and determine the fee rate for writing, closing, and redeeming an option. These fees accrue to SIREN token holders. Upon launch these fees will be set to 0 to reduce the friction in using Siren options, but will likely increase if the DeFi community adopts Siren options.
 
+### Building the Documentation Locally
+
+We use [GitBook](https://www.gitbook.com/) to build and host our docs. However, if you'd like to build them locally there are a couple steps you need to take to do so.
+
+1. Run `npm install -g gitbook-cli` to download the `gitbook-cli` tool globally
+2. Unfortunately, the `gitbook-cli` has been deprecated by the GitBook team and they haven't provided an official tool for building locally. In the meantime, you can follow the steps in [this GitHub issue](https://github.com/GitbookIO/gitbook-cli/issues/110#issuecomment-863706455) to get `gitbook-cli` working.
+3. Once you've fixed `gitbook-cli`, you can run `gitbook build .` and `gitbook serve`. You can view your locally-built docs at http://localhost:4000
+
 ![](.gitbook/assets/image.png)
 
 _NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
-
