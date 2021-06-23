@@ -9,7 +9,14 @@
 
 ## Developers
 
-* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+* [Contract Architecture](developer/contract-architecture.md)
+* [AmmFactory](developer/amm-factory.md)
+* [SeriesController](developer/series-controller.md)
+* [ERC1155Controller](developer/erc1155-controller.md)
+* [SeriesVault](developer/series-vault.md)
+* [PriceOracle](developer/price-oracle.md)
+* [Series](developer/series.md)
+* [MinterAmm](developer/minter-amm.md)
 
 ## FAQ: General
 
