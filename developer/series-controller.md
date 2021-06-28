@@ -1,8 +1,14 @@
 # SeriesController
 
+## Mainnet Contract Address
+
+TODO
+
 ## Overview
 
-The `SeriesController` implements all of the logic involving the lifecycle of [option tokens](TODO glossary). It uses the `ISeriesController.Series` struct to represent all [option series](TODO glossary). And it uses the [Open Zeppelin ERC1155PresetMinterPauser contract](https://docs.openzeppelin.com/contracts/4.x/erc1155#Presets) to perform all [ERC1155](https://eips.ethereum.org/EIPS/eip-1155) token functions.
+The `SeriesController` implements all of the logic involving the lifecycle of [option tokens](TODO glossary). It uses the `ISeriesController.Series` struct to represent all [option series](TODO glossary).
+
+Any contract wishing to redeem SIREN [option tokens](TODO glossary) will need the `SeriesController` [contract address](./series-controller.md#mainnet-contract-address).
 
 `SeriesController.mintOptions` can be used to lock `X` amount of collateral token to a [`Series`](TODO glossary) and in return mint `X` [`bToken`](TODO glossary) and `X` [`wToken`](TODO glossary). This `bToken` can then be sold at its [premium](TODO glossary) to those wishing to purchase ERC20 options, and if after expiry the `Series` is [in the money](TODO glossary) then the `bToken` can be redeemed for a portion of the `Series's` locked collateral The `wToken` can be kept until the `Series` expires at which point the remaining locked collateral can be claimed. The `SeriesController` exposes functions for redeeming the `bToken` (`SeriesController.exerciseOption`) and `wToken` (`SeriesController.claimCollateral`).
 
