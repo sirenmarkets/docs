@@ -1,3 +1,11 @@
-# Series
+# Series Struct
 
-TODO
+## Overview
+
+The `Series` is the fundamental data structure in the SIREN protocol. It represents an [`ERC20`](TODO glossary) option, and its name comes from the [TradFi](TODO glossary) term for an option with a specific underlying asset, option type ([Put](TODO glossary) or [Call](TODO glossary)) [expiration date](TODO glossary), and [strike price](TODO glossary). Each `Series` has associated [`bToken`](TODO glossary) and [`wToken`](TODO glossary) which represent the [long](TODO glossary) and [short] position, respectively, in the `Series`. The `SeriesController` manages the lifecycle of all `Series`, from `Series` creation in [`SeriesController.createSeries`](TODO link to Functions page), the minting of `bToken` and `wToken` in [`SeriesController.mintOptions`](TODO link to Functions page), to the burning of `bToken` and `wToken` in [`SeriesController.exerciseOption`](TODO link to Functions page), [`SeriesController.claimCollateral`](TODO link to Functions page), and [`SeriesController.closePosition`](TODO link to Functions page).
+
+### Covered Calls and Puts
+
+All options on the SIREN protocol are for [covered](TODO glossary) options, which means any account that wishes to mint and sell [option tokens](TODO glossary), such as the [`MinterAmm`](TODO glossary), must transfer into the `SeriesController` the full collateral necessary to fulfill the option's obligation to buy (Calls) or sell (Puts) the underlying token. For instance, to mint 1.5 unit of `bToken` on a WBTC Call `Series` with expiration of Friday 8am July 2nd 2021 and a strike price of $60,000, the seller must first call `ERC20.approve` and give the `SeriesController` an allowance of 1.5 WBTC. If instead of a Call, this `Series` was a Put but all the other parameters remained the same, then the seller would first need to `ERC20.approve` the `SeriesController` for `1.5 * $60,000 = 90,0000 USDC`. This collateral ensures that no matter what how the price of the underlying token changes, the `SeriesController` will always be able to redeem option tokens for their correct payout.
+
+## Struct Parameters
