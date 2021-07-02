@@ -13,3 +13,21 @@ First and most importantly, the `PriceOracle` stores the settlement price at exp
 Second, the `PriceOracle` gives all other protocol contracts a single place to access onchain price data. Currently we use only Chainlink's oracles, but other's like Uniswap V3 could easily be used. Contracts like the [`MinterAmm`](TODO glossary) and [`SeriesController`](TODO glossary) use the `PriceOracle` to fetch the current price for the tokens they use. It simplifies the protocol when all other contracts need only have a single address with a known interface for fetching onchain prices.
 
 ## Functions
+
+#### getCurrentPrice
+
+```solidity
+  function getCurrentPrice(
+    address underlyingToken,
+    address priceToken
+  ) public view override returns (uint256)
+```
+
+Returns the current price of the [underlying token](TODO glossary) in denominated in units of the [priceToken](TODO glossary). For example, if the current price of `WBTC`[TODO glossary] was $34,000, then the value returned by `PriceOracle.getCurrentPrice` for a `WBTC` `Series` would be `34_000 * 1e8`. This price is fetched via the [`PriceOracle](TODO glossary), which in turn fetches it from an onchain [oracle](TODO glossary).
+
+##### Parameters
+
+| Name        | Type    | Description                                                              |
+| :---------- | :------ | :------------------------------------------------------------------------|
+| `underlyingToken`  | address  | An `ERC20` token                        |
+| `priceToken`  | address  | An `ERC20` token                       |

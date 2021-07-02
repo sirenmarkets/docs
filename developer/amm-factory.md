@@ -31,11 +31,11 @@ Returns the `AMMFactory`'s associated `SeriesController`. This is set on all AMM
 
 Returns the address of an AMM earlier created by the `AmmFactory`
 
-#### Parameters:
+#### Parameters
 
 | Name        | Type    | Description                                                              |
 | :---------- | :------ | :------------------------------------------------------------------------|
-| `input`     | bytes32 | The keccak encoding of the AMM's underling, price, and colalteral tokens |
+| `input`     | bytes32 | The keccak encoding of the AMM's underlying, price, and colalteral tokens |
 
 ### createAmm
 
@@ -50,7 +50,7 @@ Returns the address of an AMM earlier created by the `AmmFactory`
 ```
 
 Deploys a new `MinterAmm` contract with the given parameters. Can only be called by the owner of the `AmmFactory`.
-#### Parameters:
+#### Parameters
 
 | Name                  | Type    | Description                                                             |
 | :-------------------- | :------ | :---------------------------------------------------------------------- |
