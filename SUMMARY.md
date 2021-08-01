@@ -5,10 +5,7 @@
 ## SIREN Protocol
 
 * [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
-
-## Developers
-
-* [Core Smart Contracts](https://github.com/sirenmarkets/core)
+* [Developers](https://github.com/sirenmarkets/core)
 
 ## FAQ: General
 
@@ -24,38 +21,23 @@
 * [What are greeks?](faq-options/what-are-greeks.md)
 * [What is a liquidity provider?](faq-options/what-is-a-liquidity-provider.md)
 
-## Governance
+## How To's
 
-* [Boardroom](https://app.boardroom.info/protocols/siren)
-* [Discourse](https://gov.sirenmarkets.com/)
-* [SIPs](https://sips.sirenmarkets.com/)
+* [How to Trade Options on SIREN](https://medium.com/siren-markets/how-to-trade-options-on-siren-42fcb85e39a5)
 
 ## Community
 
-* [Medium](https://sirenmarkets.medium.com/)
-* [Discord](https://discord.gg/JMcDB52Y)
+* [Governance](https://gov.sirenmarkets.com/)
+* [Discord](https://discord.gg/wG32VEq5Af)
 * [Twitter](https://twitter.com/sirenprotocol)
 * [Telegram](https://t.me/sirenmarkets)
-
-## Recent Media
-
-* [SIRENv2 and 2Q2021 Roadmap](https://sirenmarkets.medium.com/sirenv2-and-2q2021-roadmap-91b215f1dfdc)
-* [SIREN joins Immunefi platform: $100,000 bug bounty program](https://twitter.com/immunefi/status/1370467332032659457)
+* [Medium](https://sirenmarkets.medium.com/)
 
 ## Resources
 
-* [Learn about Ethereum](https://ethereum.org/en/learn/)
-* [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+
+
+## Useful Links
+
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
-
-## Wallets
-
-* [MetaMask](https://metamask.io/)
-* [Coinbase Wallet](https://wallet.coinbase.com/)
-* [WalletConnect](https://walletconnect.org/)
-
-## Wallet Security
-
-* [Ledger Nano S](https://shop.ledger.com/products/ledger-nano-s)
-* [Trezor One](https://shop.trezor.io/product/trezor-one-white)
-
+* [Trezor vs. Ledger](https://www.investopedia.com/trezor-vs-ledger-5193580)
