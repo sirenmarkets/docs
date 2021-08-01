@@ -4,9 +4,12 @@
 
 ## SIREN Protocol
 
-* [SIREN AMM](siren-protocol/siren-amm.md)
-* [Developers](https://github.com/sirenmarkets/core)
-* [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
+* [SIREN Automated Market Maker](siren-amm/siren-amm.md)
+* [Settlement Layer](siren-amm/settlement-layer.md)
+
+## Developers
+
+* [Core Smart Contracts](https://github.com/sirenmarkets/core)
 
 ## FAQ: General
 
