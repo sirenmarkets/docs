@@ -13,7 +13,7 @@ Therefore, SIREN AMM is designed to address the following issues:
 - Solving theta decay loss: Because the price is quoted using a Black-Scholes model, AMM is time-decay-aware
 - No arbitrage needed: There is no need for arbitrage in order to quote reasonable prices
 
-Our AMM is designed to address these issues observed in other prototypes and production-grade AMMs while preserving a mint + trade bonding curve approach. Furthermore, SIREN AMM uses an on-chain Black-Scholes approximation coupled with a Price Oracle (Chainlink). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a virtual pool is being dynamically calculated for each trade based on the current price from the Oracle.
+Our AMM is designed to address these issues observed in other prototypes and production-grade AMMs while preserving a mint + trade bonding curve approach. Furthermore, SIREN AMM uses an on-chain Black-Scholes approximation coupled with a Price Oracle (currently Chainlink). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a virtual pool is being dynamically calculated for each trade based on the current price from the Oracle.
 
 The current design for our AMM uses pooled LP funds across multiple options series. This design is favorable to LPs who want to be able to deposit their money and passively receive returns. Our LPs are not obliged to continuously close out and create new positions for each series as they expire, which would have significant gas costs for the casual investor. Our pooled structure is particularly beneficial in the early stages of the project when there are few series with limited liquidity.
 
