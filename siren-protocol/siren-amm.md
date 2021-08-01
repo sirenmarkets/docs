@@ -29,10 +29,10 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 6. The Premium is moved from the trader’s wallet to the AMM (to the respective Pool).
 7. Minting process:
 
-A.  The AMM uses LP collateral to mint the b/wTokens specified by the “# of Contracts” field
-B.  AMM moves the Collateral_In from the Pool to the allocated seriesVault. This Collateral_In consists of:
-- the Premium paid by the trader, plus
-- LP collateral previously provided to the AMM.
+- The AMM uses LP collateral to mint the b/wTokens specified by the “# of Contracts” field
+- AMM moves the Collateral_In from the Pool to the allocated seriesVault. This Collateral_In consists of:
+ - the Premium paid by the trader, plus
+ - LP collateral previously provided to the AMM.
 
 8. bTokens are sent to the Trader’s wallet which they can see in the Portfolio tab; while wTokens stay in the Pool  (presenting Covered Call / Covered Put).
 
