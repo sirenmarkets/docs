@@ -21,14 +21,14 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ### Case 1 - Buying options
 
-1. A trader enters the *# of contracts* (Calls or Puts) to be to bought in the input field on the right panel.
+1. A trader enters the *# of contracts* (Calls or Puts) to be to bought in the input field on the right panel on the *Trade* tab.
 2. AMM checks the current underlying price, **b/wToken** balances and existing **Free_Collateral** in the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) to calculate the **Premium_In** to be paid by the trader.
 3. The trader pushes the *Buy* button.
 4. The trader confirms the **Premium_In** amount for the transaction in a wallet linked (Metamask, etc.).
 5. The trader executes the transaction in the wallet.
 6. The **Premium_In** is moved from the trader’s wallet to the Pool.
 7. Minting process:
-- The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* field. This **Collateral_In** consists of:
+- The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* (1 contract equals 1 **bToken**). This **Collateral_In** consists of:
   - the **Premium_In** paid by the trader, plus
   - the **LP_Collateral** taken from the **Free_Collateral** in the Pool
 - AMM moves the **Collateral_In** from the Pool to the allocated **Series_Vault**
@@ -38,7 +38,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ### Case 2 - Selling options
 
-1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel. 1 contract equals 1 **bToken**, the total quantity can be seen in the *Portfolio* tab.
+1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel on the *Trade* tab. 1 contract equals 1 **bToken**, the total quantity can be seen in the *Portfolio* tab.
 2. The AMM checks the current underlying price, time to expiration, **b/wToken** balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing **Free_Collateral** in the Pool to calculate the **Premium_Out** to be repaid to the trader.
 3. The trader pushes the *Sell* button.
 4. The trader confirms the # of **bToken** for the transaction in a wallet linked (Metamask, etc.).
