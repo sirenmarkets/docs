@@ -17,20 +17,21 @@ The next section explains the major flows of the Settlement Layer’s contracts.
 ### Case 1 - Closing of a position
 
 1. The process is the opposite to [Minting](https://docs.sirenmarkets.com/siren-protocol/siren-amm#case-1---buying-options).
-2. 1 **bToken** + 1 **wToken** always equals 1 unit of collateral ($UNI, $SUSHI, etc.).
+2. 1 **bToken** + 1 **wToken** always equals 1 unit of **Collateral_Out** ($UNI, $SUSHI, etc.).
 3. A user selects a series and inputs the *# of contracts* to be closed.
 4. The user pushes the *Close* button on the right panel on the *Portfolio* tab.
 5. The AMM burns the equal amount of **bTokens** and **wTokens** (according to the *# of contracts*) for the respective series.
-6. The SeriesController removes the unlocked collateral from the [SeriesVault](https://docs.sirenmarkets.com/siren-protocol) and sends it to a user's wallet linked (Metamask, etc.).
+6. The SeriesController removes the unlocked **Collateral_Out** from the [SeriesVault](https://docs.sirenmarkets.com/siren-protocol) and sends it to a user's wallet linked (Metamask, etc.).
 
 ### Case 2 - Exercise of options
 
 1. SIREN Protocol supports only European style of options so an exercise can be done only after expiry.
 2. A trader selects a series to be exercised.
 3. The trader pushes the *Exercise* button on the right panel of the *Portfolio* tab.
-4. The AMM burns the expired **bTokens** (or the respective series) from a trader's wallet.
-5. The SeriesController sends the unlocked collateral from the SeriesVault to the wallet.
-> NOTE: Only ITM options exercise results in payoff
+4. The AMM burns the expired **bTokens** of the respective series from a trader's wallet.
+5. The **Exercise_Payoff** (amount of payment tokens ($USDC) to be received by the trader) equals the **Exercise_Price** minus the **Strike_Price**.
+6. The SeriesController sends the **Exercise_Payoff** from the SeriesVault to the wallet.
+> NOTE: Only ITM options exercise results in **Exercise_Payoff**
 
 ### Case 3 - Claim collateral from expired wTokens
 
