@@ -69,7 +69,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 - Claim expired **b/wTokens**
 - Add value of all active **b/wTokens** at current prices
 - Add value of the **LP_ollateral**
-4. AMM calculates the new total Pool value.
+4. The AMM calculates the new total Pool value.
 5. The necessary amount of **LP_Tokens** is minted and transferred to the LP, their quantity can be seen in the *Pool* tab.
 
 ### Case 4 - Withdrawing liquidity
@@ -78,7 +78,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 2. When withdrawing LPs can specify if they want their pro-rata **b/wTokens** to be automatically sold (the *sell tokens* checkmark) to the respective Pool for collateral ($UNI, $SUSHI, etc.):
 - If LP chooses NOT to sell then they get pro-rata of assets the pool (**LP_collateral**, **bTokens**, **wTokens**), the received **b/wTokens** quantity can be seen in the *Portfolio* tab
 - If LP chooses to sell then their **b/wTokens** will be sold pro-rata to the Pool. The price slippage impact of selling will cause the LP to receive less collateral than the fair market value of the **b/wTokens**
-3. AMM burns the respective amount of **LP_Tokens**.
+3. The AMM burns the respective amount of **LP_Tokens**.
 4. In order to calculate the correct new total Pool value and **LP_Tokens** we do the following:
 - Claim expired **b/wTokens**
 - Subtract the value of all active **b/wTokens** at current prices
