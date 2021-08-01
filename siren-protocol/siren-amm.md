@@ -4,7 +4,7 @@
 
 Bootstrapping liquidity is core to creating a thriving options protocol. Not only does liquidity get fractured by combination of strike prices and expirations, it also requires sophistication on the part of liquidity providers in order to ensure fair and sustainable pricing.
 
-To ensure liquidity on day 1 we designed a custom SIREN Automated Market Maker ("AMM") that uses a novel combination of a constant-product bonding curve and options minting to trade both bTokens and wTokens. At the core of the protocol are the MinterAmm smart contracts. Each MinterAmm can trade several Series, each sharing the same collateral token. For example, one MinterAmm contract can trade multiple strikes of WETH/USDC Calls, while another one can trade multiple WETH/USDC Puts. Once a Series is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the Settlement Layer.
+To ensure liquidity on day 1 we designed a custom SIREN Automated Market Maker ("AMM") that uses a novel combination of a constant-product bonding curve and options minting to trade both bTokens and wTokens. At the core of the protocol are the MinterAmm smart contracts. Each MinterAmm can trade several Series, each sharing the same collateral token. For example, one MinterAmm contract can trade multiple strikes of WETH/USDC Calls, while another one can trade multiple WETH/USDC Puts. Once a Series is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the [Settlement Layer](https://docs.sirenmarkets.com/siren-protocol/settlement-layer).
 
 Therefore, SIREN AMM is designed to address the following issues:
 
