@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## SIREN AMM
+## SIREN Protocol
 
 * [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
 
