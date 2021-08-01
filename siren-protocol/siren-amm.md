@@ -28,7 +28,6 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 5. The trader executes the transaction in his wallet.
 6. The **Premium_In** is moved from the trader’s wallet to the AMM (to the respective Pool).
 7. Minting process:
-
 - The AMM uses **Collateral_In** to mint the b/wTokens specified by the “# of Contracts” field. This Collateral_In consists of:
   - the **Premium_In** paid by the trader, plus
   - **LP collateral** previously provided to the AMM.
