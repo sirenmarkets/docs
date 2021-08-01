@@ -13,7 +13,6 @@
 * [For Users](faq-general/for-users.md)
 * [Product Strength](faq-general/product-strength.md)
 * [How To Get Help?](faq-general/how-to-get-help.md)
-
 * [What are options?](faq-options/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq-options/what-is-itm-atm-and-otm.md)
 * [What are greeks?](faq-options/what-are-greeks.md)
