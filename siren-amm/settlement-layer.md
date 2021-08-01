@@ -16,7 +16,7 @@ The next section explains the major flows of the Settlement Layer’s contracts.
 
 ### Case 1 - Closing of a position
 
-1. The process is the opposite of [Minting](https://docs.sirenmarkets.com/siren-protocol/siren-amm#case-1---buying-options).
+1. The process is the opposite to [Minting](https://docs.sirenmarkets.com/siren-protocol/siren-amm#case-1---buying-options).
 2. 1 **bToken** + 1 **wToken** always equals 1 unit of collateral ($UNI, $SUSHI, etc.).
 3. A user selects a series and inputs the *# of contracts* to be closed.
 4. The user pushes the *Close* button on the right panel on the *Portfolio* tab.
