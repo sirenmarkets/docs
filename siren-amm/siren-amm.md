@@ -19,7 +19,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ## Functionality
 
-### Case 1 - Buying option contracts
+### Case 1 - Buying options
 
 1. A trader enters the *# of contracts* (Calls or Puts) to be to bought in the input field on the right panel.
 2. AMM checks the current underlying price, **b/wToken** balances and existing **Free_Collateral** in the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) to calculate the **Premium_In** to be paid by the trader.
@@ -30,33 +30,33 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 7. Minting process:
 - The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* field. This **Collateral_In** consists of:
   - the **Premium_In** paid by the trader, plus
-  - the **LP_Collateral** taken from the **Free_Collateral** in the Pool.
-- AMM moves the **Collateral_In** from the Pool to the allocated **Series_Vault**.
-8. **bTokens** are sent to the trader’s wallet which can seen in the *Portfolio* tab
+  - the **LP_Collateral** taken from the **Free_Collateral** in the Pool
+- AMM moves the **Collateral_In** from the Pool to the allocated **Series_Vault**
+8. **bTokens** are sent to the trader’s wallet, their quantity can be seen in the *Portfolio* tab.
 9. **wTokens** stay in the Pool (presenting [Covered Call](https://www.investopedia.com/terms/c/coveredcall.asp) / Covered Put).
 
 
-### Case 2 - Selling option contracts
+### Case 2 - Selling options
 
-1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel.
+1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel. 1 contract equals 1 **bToken** , the tota quantity can be seen in the *Portfolio* tab.
 2. The AMM checks the current underlying price, time to expiration, **b/wToken** balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing **Free_Collateral** in the Pool to calculate the **Premium_Out** to be repaid to the trader.
 3. The trader pushes the *Sell* button.
 4. The trader confirms the # of **bToken** for the transaction in a wallet linked (Metamask, etc.).
 5. The trader executes the transaction in the wallet.
 6. The **bTokens** are moved from the trader’s wallet to the Pool.
 7. Closing process:
-- **bTokens** are matched with the respective **wTokens** (held in the Pool) and both are burned.
+- **bTokens** are matched with the respective **wTokens** (held in the Pool) and both are burned
 - The **Collateral_Out** in the **Series_Vault** becomes unlocked. This **Collateral_Out** consists of:
   - the **Premium_Out** to be paid to the trader, plus
-  - the **LP_Collateral** to be returned to the Pool.
+  - the **LP_Collateral** to be returned to the Pool
 8. The **Premium_Out** is paid to the trader's wallet.
-9. The **LP_Collateral** is returned to the Pool.
+9. The **LP_Collateral** is moved to the Pool.
 
-### Case 2.1 - Selling an option when there is not enough wTokens in the Pool (rare case)
+### Case 2.1 - Selling options when there are not enough wTokens in the Pool (rare case)
 
-1. Steps from #1 to #4 and from #6 to #8 are the same as for Case 2 (“normal” Selling).
-2. Only for step #5 are there some differences: some of bTokens are not burned but stayed in the Pool. This happens because there are not enough wTokens to close out the bToken.
-If there are enough bToken held by the AMM to service the trade, then the AMM does not need to mint additional bToken, and instead simply sells its existing bToken to the trader. If the trade size is larger than the amount of bToken held by the AMM, then the AMM will make up the difference by minting it
+1. Steps from #1 to #4 and from #6 to #8 are the same as for the Case 2 (“standard” Selling).
+2. Only for step #5 are there some differences: some of **bTokens** are not burned but stay in the Pool. This happens because there are not enough **wTokens** to close out the **bToken**.
+3. For instance, new trader wants to buy some contracts: if there are enough **bToken** held by the AMM to service the trade, then the AMM does not need to mint additional **bTokens**, and instead simply sells its existing **bTokens** to new trader. If the trade size is larger than the amount of **bTokens** held by the AMM, then the AMM will make up the difference by minting it.
 
 ### Case 3 - Depositing liquidity
 
