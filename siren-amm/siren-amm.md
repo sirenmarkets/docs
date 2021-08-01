@@ -4,12 +4,12 @@
 
 Bootstrapping liquidity is core to creating a thriving options protocol. Not only does liquidity get fractured by combination of strike prices and expirations, it also requires sophistication on the part of liquidity providers in order to ensure fair and sustainable pricing.
 
-To ensure liquidity on day 1 we designed a custom SIREN Automated Market Maker (AMM) that uses a novel combination of a constant-product bonding curve and options minting to trade both bTokens and wTokens. At the core of the protocol are the MinterAmm smart contracts. Each MinterAmm can trade several Series, each sharing the same collateral token. For example, one MinterAmm contract can trade multiple strikes of WETH/USDC Calls, while another one can trade multiple WETH/USDC Puts. Once a Series is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the Settlement Layer.
+To ensure liquidity on day 1 we designed a custom SIREN Automated Market Maker ("AMM") that uses a novel combination of a constant-product bonding curve and options minting to trade both bTokens and wTokens. At the core of the protocol are the MinterAmm smart contracts. Each MinterAmm can trade several Series, each sharing the same collateral token. For example, one MinterAmm contract can trade multiple strikes of WETH/USDC Calls, while another one can trade multiple WETH/USDC Puts. Once a Series is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the Settlement Layer.
 
 Therefore, SIREN AMM is designed to address the following issues:
 
 - Trading multiple series from a single pool: Single AMM can trade multiple series that share the same collateral tokens
-- Passive LP participation: Liquidity providers ("LPs") don’t need to worry about rolling their liquidity to another pool at expiration. The AMM manages redeeming expired Series and recycling the collateral token back to the pool to be used again for undewriting options
+- Passive Liquidity Providers ("LPs") participation: LPs don’t need to worry about rolling their liquidity to another pool at expiration. The AMM manages redeeming expired Series and recycling the collateral token back to the pool to be used again for undewriting options
 - Solving theta decay loss: Because the price is quoted using a Black-Scholes model, AMM is time-decay-aware
 - No arbitrage needed: There is no need for arbitrage in order to quote reasonable prices
 
@@ -38,7 +38,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ### Case 2 - Selling options
 
-1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel. 1 contract equals 1 **bToken** , the tota quantity can be seen in the *Portfolio* tab.
+1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel. 1 contract equals 1 **bToken**, the total quantity can be seen in the *Portfolio* tab.
 2. The AMM checks the current underlying price, time to expiration, **b/wToken** balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing **Free_Collateral** in the Pool to calculate the **Premium_Out** to be repaid to the trader.
 3. The trader pushes the *Sell* button.
 4. The trader confirms the # of **bToken** for the transaction in a wallet linked (Metamask, etc.).
@@ -55,36 +55,35 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 ### Case 2.1 - Selling options when there are not enough wTokens in the Pool (rare case)
 
 1. Steps from #1 to #4 and from #6 to #8 are the same as for the Case 2 (“standard” Selling).
-2. Only for step #5 are there some differences: some of **bTokens** are not burned but stay in the Pool. This happens because there are not enough **wTokens** to close out the **bToken**.
-3. For instance, new trader wants to buy some contracts: if there are enough **bToken** held by the AMM to service the trade, then the AMM does not need to mint additional **bTokens**, and instead simply sells its existing **bTokens** to new trader. If the trade size is larger than the amount of **bTokens** held by the AMM, then the AMM will make up the difference by minting it.
+2. Only for step #5 are there some differences: some of **bTokens** are not burned but stay in the Pool. This happens because there are not enough **wTokens** to close out the **bTokens**.
+3. For instance, new trader wants to buy some contracts: if there are enough **bTokens** held by the AMM to service the trade, then the AMM does not need to mint additional **bTokens**, and instead simply sells its existing **bTokens** to new trader. If the trade size is larger than the amount of **bTokens** held by the AMM, then the AMM will make up the difference by minting it.
 
 ### Case 3 - Depositing liquidity
 
-LP provides some amount of collateral for the Pool liquidity.
-LP will be given a corresponding amount of lpTokens to track ownership. The amount of lpTokens is calculated based on total Pool value which includes:
-collateral token
-active b/wTokens
-expired/unclaimed b/wTokens
-In order to calculate correct amounts of lpTokens we do the following:
-Claim expired wTokens and bTokens
-Add value of all active bTokens and wTokens at current prices
-Add value of collateral
-AMM calculates the total Pool value
-The necessary amount of lpTokens is minted and transferred to the LP.
-
+1. A LP deposits some amount of **LP_collateral** for the respective Pool liquidity.
+2. LP will be given a corresponding amount of **LP_Tokens** to track ownership. The amount of **LP_Tokens** is calculated based on total Pool value which includes:
+- collateral tokens ($UNI, $SUSHI, etc. for Calls or $USDC for Puts)
+- active **b/wTokens**
+- expired/unclaimed **b/wTokens**
+3. In order to calculate correct amounts of **LP_Tokens** we do the following:
+- Claim expired **b/wTokens**
+- Add value of all active **b/wTokens** at current prices
+- Add value of the **LP_ollateral**
+4. AMM calculates the new total Pool value.
+5. The necessary amount of **LP_Tokens** is minted and transferred to the LP, their quantity can be seen in the *Pool* tab.
 
 ### Case 4 - Withdrawing liquidity
 
-LP specifies what amount of lpTokens to be withdrawn from the Pool.
-When withdrawing user can specify if they want their pro-rata b/wTokens to be automatically sold to the pool for collateral (the “sell tokens” checkmark):
-If LP chooses not to sell then they get pro-rata of all tokens in the pool (collateral, bTokens, wTokens).
-If LP choses to sell then their bTokens and wTokens will be sold pro-rata to the pool for collateral. The price impact of selling will cause the LP to receive less collateral than the fair market value of the bTokens and wTokens.
-AMM burns the respective amount of lpTokens
-In order to calculate the correct amounts of the Pool value and lpTokens we do the following:
-Claim expired wTokens and bTokens
-Subtract the value of all active bTokens and wTokens at current prices
-Subtract the value of collateral
-LP will get pro-rata collateral asset
+1. LP specifies what # of **LP_Tokens** to be withdrawn from the Pool, the total quantity can be seen in the *Pool* tab.
+2. When withdrawing LPs can specify if they want their pro-rata **b/wTokens** to be automatically sold to the respective Pool for collateral (the *sell tokens* checkmark):
+- If LP chooses NOT to sell then they get pro-rata of assets the pool (**LP_collateral**, **bTokens**, **wTokens**), the received **b/wTokens** quantity can be seen in the *Portfolio* tab
+- If LP chooses to sell then their **b/wTokens** will be sold pro-rata to the Pool. The price slippage impact of selling will cause the LP to receive less collateral than the fair market value of the **b/wTokens**
+3. AMM burns the respective amount of **LP_Tokens**.
+5. In order to calculate the correct new total Pool value and **LP_Tokens** we do the following:
+- Claim expired **b/wTokens**
+- Subtract the value of all active **b/wTokens** at current prices
+- Subtract the value of the **LP_collateral**
+6. LP will get assets depending on *sell tokens* choice.
 
 ![](../.gitbook/assets/image.png)
 
