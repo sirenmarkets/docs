@@ -41,7 +41,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel on the *Trade* tab. 1 contract equals 1 **bToken**, the total quantity can be seen in the *Portfolio* tab.
 2. The AMM checks the current underlying price, time to expiration, **b/wToken** balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing **Free_Collateral** in the Pool to calculate the **Premium_Out** to be repaid to the trader.
 3. The trader pushes the *Sell* button.
-4. The trader confirms the # of **bToken** for the transaction in a wallet linked (Metamask, etc.).
+4. The trader confirms the # of **bToken** for the transaction in a wallet linked.
 5. The trader executes the transaction in the wallet.
 6. The **bTokens** are moved from the trader’s wallet to the Pool.
 7. Closing process:
