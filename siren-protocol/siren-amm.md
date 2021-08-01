@@ -31,7 +31,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 - The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* (1 contract equals 1 **bToken**). This **Collateral_In** consists of:
   - the **Premium_In** paid by the trader, plus
   - the **LP_Collateral** taken from the **Free_Collateral** in the Pool
-- The [SeriesController](https://docs.sirenmarkets.com/siren-protocol/settlement-layer) moves the **Collateral_In** from the Pool to the allocated [SeriesVault]
+- The [SeriesController](https://docs.sirenmarkets.com/siren-protocol/settlement-layer) moves the **Collateral_In** from the Pool to the allocated [SeriesVault](https://docs.sirenmarkets.com/siren-protocol)
 8. **bTokens** are sent to the trader’s wallet, their quantity can be seen in the *Portfolio* tab.
 9. **wTokens** stay in the Pool (presenting [Covered Call](https://www.investopedia.com/terms/c/coveredcall.asp) / Covered Put).
 
