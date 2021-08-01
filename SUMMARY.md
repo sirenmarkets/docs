@@ -6,6 +6,7 @@
 
 * [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
 * [Developers](https://github.com/sirenmarkets/core)
+* [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
 
 ## FAQ: General
 
@@ -35,7 +36,10 @@
 
 ## Resources
 
-
+https://info.uniswap.org/token/0xd23ac27148af6a2f339bd82d0e3cff380b5093de
+https://etherscan.io/address/0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de
+https://defipulse.com/siren
+https://duneanalytics.com/lsquared/Siren-Protocol-Master
 
 ## Useful Links
 
