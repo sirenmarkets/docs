@@ -1,4 +1,4 @@
-# SirenSwap Automated Market Maker
+# SIREN Automated Market Maker
 
 ## Overview
 
