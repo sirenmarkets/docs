@@ -62,7 +62,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 1. A LP deposits some amount of **LP_collateral** for the respective Pool liquidity.
 2. LP will be given a corresponding amount of **LP_Tokens** to track ownership. The amount of **LP_Tokens** is calculated based on total Pool value which includes:
-- collateral tokens ($UNI, $SUSHI, etc. for Calls or $USDC for Puts)
+- collateral tokens ($UNI, $SUSHI, etc.)
 - active **b/wTokens**
 - expired/unclaimed **b/wTokens**
 3. In order to calculate correct amounts of **LP_Tokens** we do the following:
@@ -75,7 +75,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 ### Case 4 - Withdrawing liquidity
 
 1. LP specifies what # of **LP_Tokens** to be withdrawn from the Pool, the total quantity can be seen in the *Pool* tab.
-2. When withdrawing LPs can specify if they want their pro-rata **b/wTokens** to be automatically sold to the respective Pool for collateral (the *sell tokens* checkmark):
+2. When withdrawing LPs can specify if they want their pro-rata **b/wTokens** to be automatically sold (the *sell tokens* checkmark) to the respective Pool for collateral ($UNI, $SUSHI, etc.):
 - If LP chooses NOT to sell then they get pro-rata of assets the pool (**LP_collateral**, **bTokens**, **wTokens**), the received **b/wTokens** quantity can be seen in the *Portfolio* tab
 - If LP chooses to sell then their **b/wTokens** will be sold pro-rata to the Pool. The price slippage impact of selling will cause the LP to receive less collateral than the fair market value of the **b/wTokens**
 3. AMM burns the respective amount of **LP_Tokens**.
