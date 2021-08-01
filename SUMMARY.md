@@ -4,7 +4,7 @@
 
 ## SIREN Protocol
 
-* [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
+* [SIREN AMM](siren-amm/siren-amm.md)
 * [Developers](https://github.com/sirenmarkets/core)
 * [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
 
