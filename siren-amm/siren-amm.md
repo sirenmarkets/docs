@@ -19,36 +19,35 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ## Functionality
 
-### Case 1 - Buying option contracts from the AMM
+### Case 1 - Buying option contracts
 
-1. The trader enters the *# of contracts* (Calls or Puts) which they want to buy in the input field on the right panel.
-2. AMM checks the current underlying price, **b/wToken** balances and existing **LP collateral** in the respective pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) to calculate the **Premium_In** to be paid by the trader.
+1. A trader enters the *# of contracts* (Calls or Puts) to be to bought in the input field on the right panel.
+2. AMM checks the current underlying price, **b/wToken** balances and existing **Free_Collateral** in the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) to calculate the **Premium_In** to be paid by the trader.
 3. The trader pushes the *Buy* button.
-4. The trader confirms the **Premium_In** amount in their wallet (Metamask, etc.).
-5. The trader executes the transaction in his wallet.
+4. The trader confirms the **Premium_In** amount in a wallet (Metamask, etc.).
+5. The trader executes the transaction in the wallet.
 6. The **Premium_In** is moved from the trader’s wallet to the AMM (to the respective Pool).
 7. Minting process:
 - The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* field. This **Collateral_In** consists of:
   - the **Premium_In** paid by the trader, plus
-  - the **LP collateral** previously provided to the AMM.
-- AMM moves the **Collateral_In** from the Pool to the allocated Series_Vault.
+  - the **LP_Collateral** (from the **Free_Collateral**) previously provided to the AMM.
+- AMM moves the **Collateral_In** from the Pool to the allocated **Series_Vault**.
 
-8. bTokens are sent to the Trader’s wallet which they can see in the *Portfolio* tab; while wTokens stay in the Pool (presenting [Covered Call](https://www.investopedia.com/terms/c/coveredcall.asp) / Covered Put).
+8. **bTokens** are sent to the trader’s wallet which can seen in the *Portfolio* tab; while **wTokens** stay in the Pool (presenting [Covered Call](https://www.investopedia.com/terms/c/coveredcall.asp) / Covered Put).
 
 
-### Case 2 - Selling option contracts back to the AMM
+### Case 2 - Selling option contracts
 
-1. The trader enters # of contracts (Calls or Puts) which they want to sell back in the input field on the right panel.
-2. The AMM checks the current underlying price, time to expiration, b/wToken balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing Collateral in the pool to calculate the Premium to be repaid to the trader.
-3. The trader pushes the Sell button.
-4. The trader approves the AMM to transfer the bToken from the trader’s wallet  (Metamask, etc.).
-5. The Trader executes the transaction in his wallet.
-The trader calls the bTokenSell function on the AMM
-Closing process:
-bTokens are matched with the respective wTokens (held in the Pool) and both are burned.
-The Collateral_Out in the seriesVault becomes unlocked.
-The Reverse Premium (the first part of the unlocked Collateral_Out) is paid to the Trader.
-The rest of the unlocked Collateral_Out is returned to the Pool.
+1. A trader enters *# of contracts* (Calls or Puts) to be sold back to the AMM in the input field on the right panel.
+2. The AMM checks the current underlying price, time to expiration, **b/wToken** balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing **LP_Collateral** in the Pool to calculate the **Premium_Out** to be repaid to the trader.
+3. The trader pushes the *Sell* button.
+4. The trader approves the AMM to transfer the **bToken** from a trader’s wallet  (Metamask, etc.).
+5. The trader executes the transaction in the wallet.
+6. Closing process:
+- **bTokens** are matched with the respective **wTokens** (held in the Pool) and both are burned.
+- The **Collateral_Out** in the **Series_Vault** becomes unlocked.
+7. The **Premium_Out** (the first part of the unlocked **Collateral_Out**) is paid to the trader.
+8. The rest of the unlocked **Collateral_Out** is returned to the Pool.
 
 ### Case 2.1 - Selling an option when there is not enough wTokens in the Pool (rare case)
 
