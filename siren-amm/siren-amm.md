@@ -79,11 +79,11 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 - If LP chooses NOT to sell then they get pro-rata of assets the pool (**LP_collateral**, **bTokens**, **wTokens**), the received **b/wTokens** quantity can be seen in the *Portfolio* tab
 - If LP chooses to sell then their **b/wTokens** will be sold pro-rata to the Pool. The price slippage impact of selling will cause the LP to receive less collateral than the fair market value of the **b/wTokens**
 3. AMM burns the respective amount of **LP_Tokens**.
-5. In order to calculate the correct new total Pool value and **LP_Tokens** we do the following:
+4. In order to calculate the correct new total Pool value and **LP_Tokens** we do the following:
 - Claim expired **b/wTokens**
 - Subtract the value of all active **b/wTokens** at current prices
 - Subtract the value of the **LP_collateral**
-6. LP will get assets depending on *sell tokens* choice.
+5. LP will get assets depending on *sell tokens* choice.
 
 ![](../.gitbook/assets/image.png)
 
