@@ -6,7 +6,7 @@ Any on-chain options protocol must have a set of contracts for managing the life
 
 The [SIREN AMMs](https://docs.sirenmarkets.com/siren-protocol/siren-amm) use the Settlement Layer to mint and sell options to traders. Without the Settlement Layer, the AMMs would have no method for tokenizing the long and short sides of an option, and there would be no market for options!
 
-The most important concept in the Settlement Layer is the series. A series represents an option for a certain underlying asset ($UNI, $SUSHI, etc. for Calls or $USDC for Puts), at a certain strike price, and with a certain expiration date. Using the Settlement Layer the SIREN Team creates new series based on community and market demand.
+The most important concept in the Settlement Layer is the series. A series represents an option for a certain underlying asset ($UNI, $SUSHI, etc.), at a certain strike price, and with a certain expiration date. Using the Settlement Layer the SIREN Team creates new series based on community and market demand.
 
 Each series is associated with an AMM that trades the series’ underlying asset. The AMM mints and sells [bTokens](https://docs.sirenmarkets.com/faq-options/what-are-options#what-are-btokens-and-wtokens) (representing the buyer's side of the trade) and holds [wTokens](https://docs.sirenmarkets.com/faq-options/what-are-options#what-are-btokens-and-wtokens) (representing the writer's side of the trade).
 
@@ -14,28 +14,29 @@ The next section explains the major flows of the Settlement Layer’s contracts.
 
 ## Functionality
 
-### Case 1 - Closing of a position (as a part of your Portfolio)
+### Case 1 - Closing of a position
 
-1. The process is the opposite of [Minting](https://docs.sirenmarkets.com/siren-protocol/siren-amm#case-1---buying-options) **b/wTokens**.
-2. 1 bToken + 1 wTokens always equals 1 unit of collateral.
-3. The User selects the series they wish to close the position on and inputs the # of contracts.
-4. The User pushes the Close button on the right panel of the Portfolio tab.
-5. Burn equal amount of bTokens and wTokens.
-6. The SeriesController removes the collateral from the **Series_Vault** and sends it to the caller's address.
+1. The process is the opposite of [Minting](https://docs.sirenmarkets.com/siren-protocol/siren-amm#case-1---buying-options).
+2. 1 **bToken** + 1 **wToken** always equals 1 unit of collateral ($UNI, $SUSHI, etc.).
+3. A user selects a series and inputs the *# of contracts* to be closed.
+4. The user pushes the *Close* button on the right panel on the *Portfolio* tab.
+5. The AMM burns the equal amount of **bTokens** and **wTokens** (according to the *# of contracts*) for the respective series.
+6. The SeriesController removes the unlocked collateral from the SeriesVault and sends it to a user's wallet linked (Metamask, etc.).
 
-### Case 2 - Exercise of expired bTokens
+### Case 2 - Exercise of options
 
-1. We support only European so we exercise only after expiry
-2. The User selects the series they wishes to exercise
-3. The User pushes the Exercise button on the right panel of the Portfolio tab
-4. The User’s bToken gets burned from the User’s address
-5. The SeriesController sends the unlocked collateral from the seriesVault to the User’s wallet (note: only ITM exercise results in payoff)
+1. SIREN Protocol supports only European style of options so an exercise can be done only after expiry.
+2. A trader selects a series to be exercised.
+3. The trader pushes the *Exercise* button on the right panel of the *Portfolio* tab.
+4. The AMM burns the expired **bTokens** (or the respective series) from a trader's wallet.
+5. The SeriesController sends the unlocked collateral from the SeriesVault to the wallet.
+> NOTE: Only ITM options exercise results in payoff
 
 ### Case 3 - Claim collateral from expired wTokens
 
-The User selects the series they wish to claim the collateral from.
-The User pushes the Claim button on the right panel on the Portfolio tab
-The AMM exercises any expired bTokens it holds
-Claiming collateral from all the expired wTokens for  the respective series:
-Burn the expired wTokens from the User’s address 
-Sending the claimed collateral from the seriesVault to the User’s wallet (Metamask, etc.).
+1. An LP selects the series they wish to claim the collateral from.
+2. The LP pushes the *Claim* button on the right panel on the *Portfolio* tab.
+3. The AMM exercises any expired **bTokens** it holds.
+4. The protocol claims collateral from all the expired **wTokens** for the respective series.
+5. The AMM burns the expired **wTokens** from a LP's wallet.
+6. The SeriesController sends the claimed collateral from the SeriesVault to the wallet.
