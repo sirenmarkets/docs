@@ -21,29 +21,29 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 
 ### Case 1 - Buying option contracts from the AMM
 
-1. The trader enters the # of contracts (Calls or Puts) which they want to buy in the input field on the right panel.
-2. AMM checks the current underlying price, b/wToken balances and existing collateral in the respective pool ($UNI, $SUSHI, $YFI, $WETH for Calls or $USDC for Puts) to calculate the Premium (shown here above the “WBTC Required” text) to be paid by the trader.
-3. The trader pushes the Buy button.
-4. The trader confirms the Premium amount in their wallet (Metamask, etc.).
-5. The trader executes the transaction in his wallet (Metamask, etc.).
-6. The Premium is moved from the trader’s wallet to the AMM (to the respective Pool).
+1. The trader enters the *# of contracts* (Calls or Puts) which they want to buy in the input field on the right panel.
+2. AMM checks the current underlying price, **b/wToken** balances and existing **LP collateral** in the respective pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) to calculate the **Premium_In** to be paid by the trader.
+3. The trader pushes the *Buy* button.
+4. The trader confirms the **Premium_In** amount in their wallet (Metamask, etc.).
+5. The trader executes the transaction in his wallet.
+6. The **Premium_In** is moved from the trader’s wallet to the AMM (to the respective Pool).
 7. Minting process:
 
-- The AMM uses LP collateral to mint the b/wTokens specified by the “# of Contracts” field
-- AMM moves the Collateral_In from the Pool to the allocated seriesVault. This Collateral_In consists of:
- - the Premium paid by the trader, plus
- - LP collateral previously provided to the AMM.
+- The AMM uses **Collateral_In** to mint the b/wTokens specified by the “# of Contracts” field. This Collateral_In consists of:
+  - the **Premium_In** paid by the trader, plus
+  - **LP collateral** previously provided to the AMM.
+- AMM moves the **Collateral_In** from the Pool to the allocated seriesVault.
 
-8. bTokens are sent to the Trader’s wallet which they can see in the Portfolio tab; while wTokens stay in the Pool  (presenting Covered Call / Covered Put).
+8. bTokens are sent to the Trader’s wallet which they can see in the *Portfolio* tab; while wTokens stay in the Pool (presenting Covered Call / Covered Put).
 
 
 ### Case 2 - Selling option contracts back to the AMM
 
-The trader enters # of contracts (Calls or Puts) which they want to sell back in the input field on the right panel.
-The AMM checks the current underlying price, time to expiration, b/wToken balances linked to the respective Pool ($UNI, $SUSHI, $YFI, $WETH for Calls or $USDC for Puts) and existing Collateral in the pool to calculate the Premium (shown here above the “WBTC Expected” text) to be repaid to the trader.
-The trader pushes the Sell button.
-The trader approves the AMM to transfer the bToken from the trader’s wallet  (Metamask, etc.).
-The Trader executes the transaction in his wallet.
+1. The trader enters # of contracts (Calls or Puts) which they want to sell back in the input field on the right panel.
+2. The AMM checks the current underlying price, time to expiration, b/wToken balances linked to the respective Pool ($UNI, $SUSHI, etc. for Calls or $USDC for Puts) and existing Collateral in the pool to calculate the Premium to be repaid to the trader.
+3. The trader pushes the Sell button.
+4. The trader approves the AMM to transfer the bToken from the trader’s wallet  (Metamask, etc.).
+5. The Trader executes the transaction in his wallet.
 The trader calls the bTokenSell function on the AMM
 Closing process:
 bTokens are matched with the respective wTokens (held in the Pool) and both are burned.
