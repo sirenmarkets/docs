@@ -7,12 +7,15 @@
 * [SirenSwap Automated Market Maker](siren-amm/siren-amm.md)
 * [Developers](https://github.com/sirenmarkets/core)
 
-## FAQ
+## FAQ: General
 
 * [About SIREN](faq-general/about-siren.md)
 * [For Users](faq-general/for-users.md)
 * [Product Strength](faq-general/product-strength.md)
 * [How To Get Help?](faq-general/how-to-get-help.md)
+
+## FAQ: Options
+
 * [What are options?](faq-options/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq-options/what-is-itm-atm-and-otm.md)
 * [What are greeks?](faq-options/what-are-greeks.md)
