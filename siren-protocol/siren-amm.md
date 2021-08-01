@@ -2,77 +2,88 @@
 
 ## Overview
 
-The SIREN Automated Market Maker \(AMM\) is designed to address issues observed in other prototypal and production-grade AMMs while preserving a mint + trade bonding curve approach. The issues it is designed to address are:
+Bootstrapping liquidity is core to creating a thriving options protocol. Not only does liquidity get fractured by combination of strike prices and expirations, it also requires sophistication on the part of liquidity providers in order to ensure fair and sustainable pricing.
 
-* **Trading multiple markets from a single pool.** AMM can trade multiple markets that share the same collateral and payment assets. For example, it can trade multiple strikes of WBTC calls.
-* **Passive LP participation.** With AMM, liquidity providers \("LPs"\) don’t need to worry about rolling their liquidity to another pool at expiration. As long as the AMM has active markets, LPs can keep their deposits.
-* **Solving theta decay loss.** Because the price is quoted using a Black-Scholes model, AMM is time-decay-aware.
-* **No arbitrage needed.** There is no need for arbitrage in order to quote reasonable prices.
+To ensure liquidity on day 1 we designed a custom SIREN Automated Market Maker (AMM) that uses a novel combination of a constant-product bonding curve and options minting to trade both bTokens and wTokens. At the core of the protocol are the MinterAmm smart contracts. Each MinterAmm can trade several Siren Series, each sharing the same collateral token. For example, one MinterAmm contract can trade multiple strikes of WETH/USDC Calls, while another one can trade multiple WETH/USDC Puts. Once a Series is created anyone can interact with it in a permissionless manner. The solvency of a position is ensured at all times by the collateral locked in the Settlement Layer.
 
-SIREN uses on-chain Black-Scholes approximation coupled with a price Oracle \(Chainlink\). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a pool is being dynamically created for each trade based on the current oracle price.
+Therefore, Siren is designed to address the following issues:
 
-## **How it works**
+- Trading multiple series from a single pool: Single AMM can trade multiple series that share the same collateral tokens
+- Passive LP participation: Liquidity providers ("LPs") don’t need to worry about rolling their liquidity to another pool at expiration. The AMM manages redeeming expired Series and recycling the collateral token back to the pool to be used again for undewriting options
+- Solving theta decay loss: Because the price is quoted using a Black-Scholes model, AMM is time-decay-aware
+- No arbitrage needed: There is no need for arbitrage in order to quote reasonable prices
 
-Initially LPs deposit a collateral asset into the SIREN AMM pool, e.g. for WBTC/USDC calls the collateral asset is WBTC. When traders buy options from the SIREN AMM, the collateral in the pool is used to mint a new token pair \(a `bToken`, which stands for buyToken, and a `wToken`, which stands for writeToken\). bTokens are sent to the buyer while wTokens stay in the pool. When buyers make trades they pay a premium in the collateral asset. In essence, over time, LPs become covered option writers in a passive way, automatically underwriting contracts for which there is demand.
+Our AMM is designed to address these issues observed in other prototypes and production-grade AMMs while preserving a mint + trade bonding curve approach. Furthermore, Siren AMM uses an on-chain Black-Scholes approximation coupled with a Price Oracle (Chainlink). It uses the bonding curve to determine slippage for each trade, but not the starting price. You can think of it as if a virtual pool is being dynamically calculated for each trade based on the current price from the Oracle.
 
-At the core of the system is a `MinterAmm` smart contract. Each MinterAmm can trade up to 6 SIREN options contracts, each sharing the same collateral and payment tokens. For example, one MinterAmm contract can trade multiple WBTC/USDC calls, while another one can trade multiple WBTC/USDC puts.
+The current design for our AMM uses pooled LP funds across multiple options series. This design is favorable to LPs who want to be able to deposit their money and passively receive returns. Our LPs are not obliged to continuously close out and create new positions for each series as they expire, which would have significant gas costs for the casual investor. Our pooled structure is particularly beneficial in the early stages of the project when there are few series with limited liquidity.
 
-Note that SIREN AMM only trades bTokens, but not wTokens. Trading of wTokens may become available in the future.
+## Functionality
 
-## **Trading mechanics**
+### Case 1 - Buying option contracts from the AMM
 
-From a technical perspective, AMM functions in the following stepwise fashion:
+1. The trader enters the # of contracts (Calls or Puts) which they want to buy in the input field on the right panel.
+2. AMM checks the current underlying price, b/wToken balances and existing collateral in the respective pool ($UNI, $SUSHI, $YFI, $WETH for Calls or $USDC for Puts) to calculate the Premium (shown here above the “WBTC Required” text) to be paid by the trader.
+3. The trader pushes the Buy button.
+4. The trader confirms the Premium amount in their wallet (Metamask, etc.).
+5. The trader executes the transaction in his wallet (Metamask, etc.).
+6. The Premium is moved from the trader’s wallet to the AMM (to the respective Pool).
+7. Minting process:
 
-1. Calculates bToken price using Black-Scholes approximation. It accepts the following inputs: current collateral price, implied volatility, option strike, time to expiration.
-2. Based on the current pool collateral and b/wToken balance, determines the maximum-sized bToken / wToken pool that matches the price from step 1.
-3. Executes the trade in the pool.
-4. Cleans up all residual b/wTokens to ensure there is always maximum collateral available in the pool.
+a. The AMM uses LP collateral to mint the b/wTokens specified by the “# of Contracts” field
+b. AMM moves the Collateral_In from the Pool to the allocated seriesVault. This Collateral_In consists of:
+- the Premium paid by the trader, plus
+- LP collateral previously provided to the AMM.
 
-## **Providing capital**
+8. bTokens are sent to the Trader’s wallet which they can see in the Portfolio tab; while wTokens stay in the Pool  (presenting Covered Call / Covered Put).
 
-Depositing capital involves the following steps:
 
-1. Claiming all expired unclaimed wTokens in order to release their locked collateral or payment tokens into the AMM pool.
-2. Calculates total pool value as a sum of collateral + payment token + bTokens + wTokens. To calculate the value of the payment token AMM uses a price Oracle; to calculate the value of b/wTokens AMM uses the price Oracle + Black-Scholes approximation.
-3. Calculates the amount of LP tokens to mint.
+### Case 2 - Selling option contracts back to the AMM
 
-When an LP wishes to provide collateral to the pool, the pool calculates the total value of all assets on its balance in order to properly calculate the amount of new LP tokens to mint.
+The trader enters # of contracts (Calls or Puts) which they want to sell back in the input field on the right panel.
+The AMM checks the current underlying price, time to expiration, b/wToken balances linked to the respective Pool ($UNI, $SUSHI, $YFI, $WETH for Calls or $USDC for Puts) and existing Collateral in the pool to calculate the Premium (shown here above the “WBTC Expected” text) to be repaid to the trader.
+The trader pushes the Sell button.
+The trader approves the AMM to transfer the bToken from the trader’s wallet  (Metamask, etc.).
+The Trader executes the transaction in his wallet.
+The trader calls the bTokenSell function on the AMM
+Closing process:
+bTokens are matched with the respective wTokens (held in the Pool) and both are burned.
+The Collateral_Out in the seriesVault becomes unlocked.
+The Reverse Premium (the first part of the unlocked Collateral_Out) is paid to the Trader.
+The rest of the unlocked Collateral_Out is returned to the Pool.
 
-## **Withdrawing capital**
+### Case 2.1 - Selling an option when there is not enough wTokens in the Pool (rare case)
 
-Withdrawing capital involves the following steps:
+1. Steps from #1 to #4 and from #6 to #8 are the same as for Case 2 (“normal” Selling).
+2. Only for step #5 are there some differences: some of bTokens are not burned but stayed in the Pool. This happens because there are not enough wTokens to close out the bToken.
+If there are enough bToken held by the AMM to service the trade, then the AMM does not need to mint additional bToken, and instead simply sells its existing bToken to the trader. If the trade size is larger than the amount of bToken held by the AMM, then the AMM will make up the difference by minting it
 
-1. Claiming all expired unclaimed wTokens in order to release their locked collateral or payment token into the AMM pool.
-2. Withdrawing all pro-rata assets.
+### Case 3 - Depositing liquidity
 
-When an LP withdraws their capital, the AMM might have any combination of collateral token, payment token, active b/wTokens and expired unclaimed b/wTokens. Pro-rata w/bTokens are sent to their address.
+LP provides some amount of collateral for the Pool liquidity.
+LP will be given a corresponding amount of lpTokens to track ownership. The amount of lpTokens is calculated based on total Pool value which includes:
+collateral token
+active b/wTokens
+expired/unclaimed b/wTokens
+In order to calculate correct amounts of lpTokens we do the following:
+Claim expired wTokens and bTokens
+Add value of all active bTokens and wTokens at current prices
+Add value of collateral
+AMM calculates the total Pool value
+The necessary amount of lpTokens is minted and transferred to the LP.
 
-## **Pricing**
 
-The price that the AMM quotes for each trade is determined by two components: marginal price and slippage. The marginal price is calculated on-chain based on a formula that takes as parameters the underlying price, time to expiration, option strike and implied volatility. In addition, each trade incurs slippage that is based on the size of the trade and available assets in the pool - the larger the trade relative to the size of the pool the higher the slippage. LPs benefit from this slippage as it provides a revenue stream in addition to collecting option premiums.
+### Case 4 - Withdrawing liquidity
 
-## **Contract expiration**
-
-When contracts expire the AMM uses wTokens on its balance to claim the collateral and/or payment locked inside options markets back into the pool. This newly recycled collateral can now be used to underwrite options for newer markets, hence providing LPs with a passive way to underwrite options without having to manually roll expiring contracts.
-
-## **LP risks**
-
-As option writers LPs carry the risk of option being exercised. Since buyers are motivated to exercise their options only when it is profitable to do so it means LPs incur losses when this happens. When exercise happens collateral token locked inside of wTokens is exchanged for payment token at a ratio determined by the option strike price.
-
-A rational buyer would only trigger an exercise if the strike price is lower than current underlying price \(i.e. they can buy the underlying asset cheaper than it trades in the market\). In other words, LPs are forced to sell the underlying asset for less than they could've sold it in the market. This risk is present for option writes in all options markets in traditional finance.
-
-There are factors that reduce LP risk:
-
-1. Slippage creates a separate revenue stream that offsets potential exercise losses.
-2. Diversification. Since a single AMM can trade multiple markets, LPs exercise risk is spread across multiple strike prices and expirations.
-
-## **LP rewards / sources of yield**
-
-LPs earn yield in three ways:
-
-1. Collecting option premium when traders buy options
-2. Slippage when traders buy or sell options
-3. SI reward tokens via the [SIREN LPP](https://sirenmarkets.medium.com/expanding-the-siren-lpp-c69969e25d41)
+LP specifies what amount of lpTokens to be withdrawn from the Pool.
+When withdrawing user can specify if they want their pro-rata b/wTokens to be automatically sold to the pool for collateral (the “sell tokens” checkmark):
+If LP chooses not to sell then they get pro-rata of all tokens in the pool (collateral, bTokens, wTokens).
+If LP choses to sell then their bTokens and wTokens will be sold pro-rata to the pool for collateral. The price impact of selling will cause the LP to receive less collateral than the fair market value of the bTokens and wTokens.
+AMM burns the respective amount of lpTokens
+In order to calculate the correct amounts of the Pool value and lpTokens we do the following:
+Claim expired wTokens and bTokens
+Subtract the value of all active bTokens and wTokens at current prices
+Subtract the value of collateral
+LP will get pro-rata collateral asset
 
 ![](../.gitbook/assets/image.png)
 
