@@ -31,7 +31,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 - The AMM uses **Collateral_In** to mint the b/wTokens specified by the *# of Contracts* (1 contract equals 1 **bToken**). This **Collateral_In** consists of:
   - the **Premium_In** paid by the trader, plus
   - the **LP_Collateral** taken from the **Free_Collateral** in the Pool
-- AMM moves the **Collateral_In** from the Pool to the allocated **Series_Vault**
+- AMM moves the **Collateral_In** from the Pool to the allocated **SeriesVault**
 8. **bTokens** are sent to the trader’s wallet, their quantity can be seen in the *Portfolio* tab.
 9. **wTokens** stay in the Pool (presenting [Covered Call](https://www.investopedia.com/terms/c/coveredcall.asp) / Covered Put).
 
@@ -46,7 +46,7 @@ The current design for our AMM uses pooled LP funds across multiple options seri
 6. The **bTokens** are moved from the trader’s wallet to the Pool.
 7. Closing process:
 - **bTokens** are matched with the respective **wTokens** (held in the Pool) and both are burned
-- The **Collateral_Out** in the **Series_Vault** becomes unlocked. This **Collateral_Out** consists of:
+- The **Collateral_Out** in the **SeriesVault** becomes unlocked. This **Collateral_Out** consists of:
   - the **Premium_Out** to be paid to the trader, plus
   - the **LP_Collateral** to be returned to the Pool
 8. The **Premium_Out** is paid to the trader's wallet.
