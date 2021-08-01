@@ -21,7 +21,7 @@ The next section explains the major flows of the Settlement Layer’s contracts.
 3. A user selects a series and inputs the *# of contracts* to be closed.
 4. The user pushes the *Close* button on the right panel on the *Portfolio* tab.
 5. The AMM burns the equal amount of **bTokens** and **wTokens** (according to the *# of contracts*) for the respective series.
-6. The SeriesController removes the unlocked collateral from the SeriesVault and sends it to a user's wallet linked (Metamask, etc.).
+6. The SeriesController removes the unlocked collateral from the [SeriesVault](https://docs.sirenmarkets.com/siren-protocol) and sends it to a user's wallet linked (Metamask, etc.).
 
 ### Case 2 - Exercise of options
 
