@@ -2,7 +2,7 @@
 
 ## What is SIREN?
 
-Siren Markets is a decentralized protocol for creating, trading, and redeeming fully-collateralized options contracts for ERC20 tokens on Ethereum. Siren Markets \(‘SIREN’\) is focused on creating a high-quality, seamless experience for sophisticated users and requires no third-party settling mechanism or order matching to complete option settlement on chain. The goal of SIREN is to provide a flexible TradFi-like application platform designed for sophisticated traders without sacrificing the autonomy, self-custody, and composability of DeFi.
+Siren Markets is a decentralized protocol for creating, trading, and redeeming fully-collateralized options contracts for `ERC20` tokens on Ethereum. Siren Markets \(‘SIREN’\) is focused on creating a high-quality, seamless experience for sophisticated users and requires no third-party settling mechanism or order matching to complete option settlement on chain. The goal of SIREN is to provide a flexible TradFi-like application platform designed for sophisticated traders without sacrificing the autonomy, self-custody, and composability of DeFi.
 
 The cryptocurrency derivatives market has the potential to have trading volume in the trillions, and we are poised to capture a significant share of this nascent market looking for a flexible, fully-decentralized, user-friendly product that allows for self custody and advanced positions. SIREN is building a fully-tradable options ecosystem that can be handled as easily as a standard ERC-20.
 
