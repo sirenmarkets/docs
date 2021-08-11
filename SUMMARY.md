@@ -4,8 +4,8 @@
 
 ## SIREN Protocol
 
-* [SIREN Automated Market Maker](siren-amm/siren-amm.md)
-* [Settlement Layer](siren-amm/settlement-layer.md)
+* [SIREN Automated Market Maker](siren-protocol/siren-amm.md)
+* [Settlement Layer](siren-protocol/settlement-layer.md)
 
 ## Developers
 
