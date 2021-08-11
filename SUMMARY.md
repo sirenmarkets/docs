@@ -4,7 +4,7 @@
 
 ## SIREN Protocol
 
-* [SIREN AMM](siren-amm/siren-amm.md)
+* [SIREN AMM](siren-protocol/siren-amm.md)
 * [Developers](https://github.com/sirenmarkets/core)
 * [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
 
@@ -34,14 +34,8 @@
 * [Telegram](https://t.me/sirenmarkets)
 * [Medium](https://sirenmarkets.medium.com/)
 
-## Resources
-
-https://info.uniswap.org/token/0xd23ac27148af6a2f339bd82d0e3cff380b5093de
-https://etherscan.io/address/0xD23Ac27148aF6A2f339BD82D0e3CFF380b5093de
-https://defipulse.com/siren
-https://duneanalytics.com/lsquared/Siren-Protocol-Master
-
 ## Useful Links
 
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
 * [Trezor vs. Ledger](https://www.investopedia.com/trezor-vs-ledger-5193580)
+
