@@ -28,9 +28,7 @@ In SirenSwap AMM both the buyer’s and writer’s side of the contract are toke
 
 Initially LPs deposit a collateral asset into the SIREN AMM pool, e.g. for WBTC/USDC calls the collateral asset is WBTC. When traders buy options from the SIREN AMM, the collateral in the pool is used to mint a new token pair \(a bToken and a wToken\). bTokens are sent to the buyer while wTokens stay in the pool. When buyers make trades they pay a premium in the collateral asset. In essence, over time, LPs become covered option writers in a passive way, automatically underwriting contracts for which there is demand.
 
-When you buy a put the on-chain token amount is multiplied by the strike. For example, a 1 WBTC $50K PUT will result in 50,000 bTokens. For the same reason, a put is just a reversed-assets call \(e.g. a WBTC/USDC put is actually a USDC/WBTC call\).​
-
-More detailed explanation of the SirenSwap AMM and b/wTokens see at [https://docs.sirenmarkets.com/siren-amm](https://docs.sirenmarkets.com/siren-amm)
+More detailed explanation of the SirenSwap AMM and b/wTokens see at the [AMM section](../siren-protocol/siren-amm.md)
 
 ## Risks of trading options
 

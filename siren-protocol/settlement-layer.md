@@ -31,6 +31,7 @@ The next section explains the major flows of the Settlement Layer’s contracts.
 4. The AMM burns the expired **bTokens** of the respective series from a trader's wallet.
 5. The **Exercise_Payoff** (amount of payment tokens ($USDC) to be received by the trader) equals the **Exercise_Price** minus the **Strike_Price**.
 6. The SeriesController sends the **Exercise_Payoff** from the SeriesVault to the wallet.
+
 > NOTE: Only ITM options exercise results in **Exercise_Payoff**
 
 ### Case 3 - Claim collateral from expired wTokens
