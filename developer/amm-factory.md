@@ -1,8 +1,8 @@
 # AmmFactory
 
-## Mainnet Contract Address
+## Polygon Contract Address
 
-TODO
+[View on Polygonscan](https://polygonscan.com/address/0x0cdaa64b47474e02cdfbd811ec9fd2d265cd3a0a)
 
 ## Source Code
 

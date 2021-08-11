@@ -1,8 +1,8 @@
 # MinterAmm
 
-## Mainnet Contract Address
+## Polygon Contract Address
 
-TODO
+[View on Polygonscan](https://polygonscan.com/address/0xca84835655a8e863d34875326419a46f823320f6)
 
 ## Source Code
 
