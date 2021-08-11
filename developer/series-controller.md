@@ -1,8 +1,8 @@
 # SeriesController
 
-## Mainnet Contract Address
+## Polygon Contract Address
 
-TODO
+[View on Polygonscan](https://polygonscan.com/address/0x716c543b39a85aac0240ba7ed07e79f06e1fed48)
 
 ## Source Code
 
