@@ -35,6 +35,7 @@
 
 * [How to Trade Options on SIREN](https://medium.com/siren-markets/how-to-trade-options-on-siren-42fcb85e39a5)
 * [How LP migrates to the v2 (Polygon)](https://medium.com/siren-markets/siren-v2-deployment-call-for-lp-migration-91905a26edb7)
+* [SIREN v2 Trading (loom)](https://www.loom.com/share/a1c584c514514ca7a9c312c3105f7a89)
 
 ## Community
 
