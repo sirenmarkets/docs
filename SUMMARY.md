@@ -47,7 +47,7 @@
 
 ## Reviews About SIREN
 
-[The Protocols Bringing Derivatives to DeFi (by Quantstamp Labs)](https://quantstamp.com/blog/the-protocols-bringing-derivatives-to-defi#siren)
+* [The Protocols Bringing Derivatives to DeFi (by Quantstamp Labs)](https://quantstamp.com/blog/the-protocols-bringing-derivatives-to-defi#siren)
 
 ## Useful Links
 
