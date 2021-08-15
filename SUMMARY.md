@@ -18,19 +18,16 @@
 * [Series](developer/series.md)
 * [MinterAmm](developer/minter-amm.md)
 
-## FAQ: General
+## FAQ
 
 * [About SIREN](faq-general/about-siren.md)
 * [For Users](faq-general/for-users.md)
 * [Product Strength](faq-general/product-strength.md)
-* [How To Get Help?](faq-general/how-to-get-help.md)
-
-## FAQ: Options
-
 * [What are options?](faq-options/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq-options/what-is-itm-atm-and-otm.md)
 * [What are greeks?](faq-options/what-are-greeks.md)
 * [What is a liquidity provider?](faq-options/what-is-a-liquidity-provider.md)
+* [How To Get Help?](faq-general/how-to-get-help.md)
 
 ## How To's
 
