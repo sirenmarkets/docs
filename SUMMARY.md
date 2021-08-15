@@ -45,6 +45,10 @@
 * [Telegram](https://t.me/sirenmarkets)
 * [Medium](https://sirenmarkets.medium.com/)
 
+## Reviews About SIREN
+
+[The Protocols Bringing Derivatives to DeFi (by Quantstamp Labs)](https://quantstamp.com/blog/the-protocols-bringing-derivatives-to-defi#siren)
+
 ## Useful Links
 
 * [Swapping Tokens](https://medium.com/metamask/introducing-metamask-swaps-84318c643785)
