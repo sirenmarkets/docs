@@ -35,7 +35,7 @@
 
 * [How to Trade Options on SIREN](https://medium.com/siren-markets/how-to-trade-options-on-siren-42fcb85e39a5)
 * [How LP migrates to the v2 (Polygon)](https://medium.com/siren-markets/siren-v2-deployment-call-for-lp-migration-91905a26edb7)
-* [SIREN v2 Trading (loom)](https://www.loom.com/share/a1c584c514514ca7a9c312c3105f7a89)
+* [SIREN v2 Trading: Buy an Option (loom)](https://www.loom.com/share/a1c584c514514ca7a9c312c3105f7a89)
 
 ## Community
 
@@ -48,6 +48,7 @@
 ## Reviews About SIREN
 
 * [The Protocols Bringing Derivatives to DeFi (by Quantstamp Labs)](https://quantstamp.com/blog/the-protocols-bringing-derivatives-to-defi#siren)
+* [Prominent DeFi Projects (by Rockaway Blockchain Fund)](https://www.rockawaycapital.com/en/2021/03/rockaway-blockchain-fund-invests-in-three-more-defi-projects-bcb-group-siren-markets-and-blockdeamon/)
 
 ## Useful Links
 
