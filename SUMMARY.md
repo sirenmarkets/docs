@@ -30,7 +30,7 @@
 * [What are Greeks?](faq-options/what-are-greeks.md)
 * [Who is Liquidity Provider?](faq-options/what-is-a-liquidity-provider.md)
 
-## How To's
+## How To
 
 * [How To Get Help?](faq-general/how-to-get-help.md)
 * [How to Trade Options on SIREN](https://medium.com/siren-markets/how-to-trade-options-on-siren-42fcb85e39a5)
