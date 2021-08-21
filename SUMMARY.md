@@ -9,7 +9,7 @@
 * [Settlement Layer](siren-protocol/settlement-layer.md)
 * [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
 
-## Developers
+## Contracts
 
 * [Contract Architecture](developer/contract-architecture.md)
 * [Amm Factory](developer/amm-factory.md)
