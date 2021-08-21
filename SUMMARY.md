@@ -12,11 +12,11 @@
 ## Developers
 
 * [Contract Architecture](developer/contract-architecture.md)
-* [AmmFactory](developer/amm-factory.md)
-* [SeriesController](developer/series-controller.md)
-* [ERC1155Controller](developer/erc1155-controller.md)
-* [SeriesVault](developer/series-vault.md)
-* [PriceOracle](developer/price-oracle.md)
+* [Amm Factory](developer/amm-factory.md)
+* [Series Controller](developer/series-controller.md)
+* [ERC-1155 Controller](developer/erc1155-controller.md)
+* [Series Vault](developer/series-vault.md)
+* [Price Oracle](developer/price-oracle.md)
 * [Series](developer/series.md)
 * [MinterAmm](developer/minter-amm.md)
 
@@ -25,17 +25,18 @@
 * [About SIREN](faq-general/about-siren.md)
 * [For Users](faq-general/for-users.md)
 * [Product Strength](faq-general/product-strength.md)
-* [What are options?](faq-options/what-are-options.md)
+* [What are Options?](faq-options/what-are-options.md)
 * [What is ITM, ATM and OTM?](faq-options/what-is-itm-atm-and-otm.md)
-* [What are greeks?](faq-options/what-are-greeks.md)
-* [What is a liquidity provider?](faq-options/what-is-a-liquidity-provider.md)
+* [What are Greeks?](faq-options/what-are-greeks.md)
+* [Who is Liquidity Provider?](faq-options/what-is-a-liquidity-provider.md)
+
+## How To's
+
 * [How To Get Help?](faq-general/how-to-get-help.md)
-
-## How To
-
 * [How to Trade Options on SIREN](https://medium.com/siren-markets/how-to-trade-options-on-siren-42fcb85e39a5)
-* [How LP migrates to the v2 (Polygon)](https://medium.com/siren-markets/siren-v2-deployment-call-for-lp-migration-91905a26edb7)
+* [How LPs Can Migrate to Protocol v2](https://medium.com/siren-markets/siren-v2-deployment-call-for-lp-migration-91905a26edb7)
 * [SIREN v2 Trading: Buy an Option (loom)](https://www.loom.com/share/a1c584c514514ca7a9c312c3105f7a89)
+* [How to Participate in SIREN Grants Program](https://medium.com/siren-markets/siren-grants-program-96f5bd27f18e)
 
 ## Community
 
