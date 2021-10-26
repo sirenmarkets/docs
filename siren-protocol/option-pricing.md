@@ -20,3 +20,7 @@ However, SIREN deliberately implements price impact to achieve a simulation of m
 Additionally, price impact creates an “urgency premium”; if a trader wants to complete a very large trade all at once it will cost them more, benefitting SIREN’s LP’s in the form of increased premium profit. 
 
 These factors together form the basis for SIREN AMM’s option pricing.  SIREN factors in price impact before the trade is executed, and has guardrails to ensure buyers are quoted an accurate price.
+
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
