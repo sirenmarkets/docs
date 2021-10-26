@@ -13,3 +13,7 @@ The use of liquidity pools across multiple option series is a novel SIREN implem
 Once this liquidity has been accepted by the AMM, the buyer-side cycle of interaction commences.  The buyer selects an option they would like to purchase from the AMM, which determines the premium price.  The buyer pays that premium, prompting the AMM to immediately distribute that premium pro-rata to LP’s that have contributed to that option series’ pool.   
 
 The rest of this cycle is handled by SIREN’s Settlement Layer, which will be explained presently.
+
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
