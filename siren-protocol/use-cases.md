@@ -37,3 +37,7 @@ Options allow writers to profit off such sideways movement, a position that coul
 The above use cases are valid examples, but not exhaustive.  
 
 Additionally, the writer’s use case is missing additional context of how SIREN’s DeFi implementation transforms the role of writers in the protocol. An option writer’s role is transformed from the traditional active management into a passively indexed position that is largely handled by the SIREN Automated Market Maker.  These changes will be elaborated on presently.  
+
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
