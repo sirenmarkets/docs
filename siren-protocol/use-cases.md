@@ -1,10 +1,10 @@
-№ Use Cases
+# Use Cases
 
 Options are a valuable and desired tool in a trader’s arsenal, which is why SIREN has implemented them in a DeFi environment.  Traders can use options to profit regardless of market movement, incorporating additional consideration and belief into their positions.
 
 Broadly, SIREN options provide utility in the following ways:
 
-## For Buyers:
+## For Buyers
 
 ### Hedging
 
@@ -22,7 +22,7 @@ Because options expire, they can be used to speculate on the underlying asset fo
 
 Options allow buyers to incorporate “when” as a factor into their position and seek greater speculative return within that time frame without holding ETH directly (a lower upfront cost of a premium versus purchasing the asset).  Options here enable punchier bets and more strategic financial constructions.
 
-## For Writers:
+## For Writers
 
 ### Premiums
 
@@ -32,7 +32,7 @@ Options cost an upfront premium to buyers, and options writers collect that prem
 
 Options allow writers to profit off such sideways movement, a position that could not be replicated through simply interacting with the underlying asset in a binary buy/sell paradigm.
 
-## To Conclude:
+## To Conclude
 
 The above use cases are valid examples, but not exhaustive.  
 
