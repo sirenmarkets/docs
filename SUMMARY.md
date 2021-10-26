@@ -5,6 +5,7 @@
 ## SIREN Protocol
 
 * [Glossary](developer/glossary.md)
+* [Use Cases](siren-protocol/use-cases.md)
 * [Automated Market Maker](siren-protocol/siren-amm.md)
 * [Settlement Layer](siren-protocol/settlement-layer.md)
 * [The Graph](https://thegraph.com/explorer/subgraph/sirenmarkets/protocol)
