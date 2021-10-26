@@ -95,3 +95,7 @@ The token whose price determines the moneyless of the series.  As the price of t
 ### wToken
 
 A token composed of the short side of the contract combined with the collateral, representing a covered call or cash-secured put.  wTokens are minted together with bTokens by the AMM as it locks up the collateral for an option series trade.  wTokens are held by the AMM and the process of LP’s claiming wTokens is managed by the Settlement Layer.
+
+![](../.gitbook/assets/image.png)
+
+_NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
