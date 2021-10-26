@@ -6,6 +6,6 @@ bTokens can be traded freely, even outside of SIREN’s platform. They are assig
 
 wTokens are held by the AMM until their series expires, and can then be claimed by LP’s to unwind the collateral, closing the contract.  This freed collateral is then distributed to LP’s in a pro-rata fashion.
 
-![](.gitbook/assets/image.png)
+![](../.gitbook/assets/image.png)
 
 _NOTE: This is a living document that will continue to be updated as SIREN evolves. To contribute, please visit_ [_SIREN on GitHub_](https://github.com/sirenmarkets/core)_. Specific questions may be answered and technical guidance may also be provided from time to time in the_ [_SIREN Telegram_](https://t.me/sirenmarkets) _to those who are interested in building on top of the protocol._
