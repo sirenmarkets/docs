@@ -8,9 +8,9 @@
 | Style                   | European                                     |
 | Method of Exercise      | Cash Settlement in USDC                      |
 | Settlement Asset        | USD Coin (USDC)                              |
-| Trading Hours           | 24/7                                         |
-| Expiration Date & Time  | D0/D+1*, or Friday at 8am UTC                |
-| Oracle Dispute Period** | 8am – 8pm UTC                                |
+| Trading Hours          | 24/7                                         |
+| Expiration Date & Time | D0/D+1*, or Friday at 8am UTC                |
+| Settlement Period**    | 8am – 8pm UTC                                |
 | Tick Size               | $0.01                                        |
 | Multiplier              | 1 (1 contract = 1 BTC)                       |
 | Minimum Order Value     | 0.000001 contract                            |
@@ -27,7 +27,7 @@
 | Settlement Asset        | USD Coin (USDC)                              |
 | Trading Hours           | 24/7                                         |
 | Expiration Date* & Time | D0/D+1, or Friday at 8am UTC                 |
-| Oracle Dispute Period** | 8am – 8pm UTC                                |
+| Settlement Period**     | 8am – 8pm UTC                                |
 | Tick Size               | $0.01                                        |
 | Multiplier              | 1 (1 contract = 1 ETH)                       |
 | Minimum Order Value     | 0.000001 contract                            |
@@ -44,7 +44,7 @@
 | Settlement Asset        | USD Coin (USDC)                              |
 | Trading Hours           | 24/7                                         |
 | Expiration Date* & Time | D0/D+1, or Friday at 8am UTC                 |
-| Oracle Dispute Period** | 8am – 8pm UTC                                |
+| Settlement Period**     | 8am – 8pm UTC                                |
 | Tick Size               | $0.001                                       |
 | Multiplier              | 1 (1 contract = 1 ARB)                       |
 | Minimum Order Value     | 0.000001 contract                            |
@@ -62,5 +62,5 @@
 - Q+1: last Friday in +1 quarter from the current or next day
 - Q+2: last Friday in +2 quarter from the current or next day
 
-**Oracle Negotiation Period
+**Settlement Period
 
