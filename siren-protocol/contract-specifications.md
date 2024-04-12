@@ -64,3 +64,4 @@
 
 **Settlement Period
 
+Before executing options, Siren Protocol waits 12 hours in case of an Oracle dispute at the wrong price.
