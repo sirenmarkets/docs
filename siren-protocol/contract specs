@@ -8,10 +8,8 @@
 | Trading Hours          | 24/7                                         |
 | Expiration Date & Time | D0/D+1*, or Friday at 8am UTC                |
 | Settlement Period**    | 8am – 8pm UTC                                |
-| Tick Size              | $0.01                                        |
 | Multiplier             | 1 (1 contract = 1 underlying asset)          |
 | Minimum Order Value    | 0.000001 contract                            |
-| Strike Price Step      | $1,000                                       |
 | Contract Expirations** | D0/D+1, W+1, W+2, M+1, M+2, M+3, Q1, and Q+2 |
 
 * Settlement Period
