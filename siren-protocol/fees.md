@@ -6,7 +6,7 @@
 
 **Withdrawal Fee**: 0.0% 
 
-**Settlement Fees**: 0.0% 
+**Settlement Fee**: 0.0% 
 
 **Trading Fee**: 
 - Leg Fee (fee for each option series traded) = Minimum of {0.04% * Current Underlying Price; 12.5% * Premium} * number of contracts
