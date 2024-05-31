@@ -30,7 +30,7 @@ An ETH option series is traded with the Premium of 400 USDC, and the Current Und
 
 So, the Total Fee paid by a User will be:
 - Leg Fee = MIN {0.04% * 3,000; 12.5% * 400} * 5 contracts = MIN {1.2; 50} * 5 = 1.2 * 5 = 6 USDC
-- Total Fee = Leg Fee = 6 USDC
+- **Total Fee = Leg Fee = 6 USDC**
 
 #### Example with 2 Legs
 
@@ -39,7 +39,7 @@ The first ETH option series is traded with the Premium of 400 USDC, the second o
 So, the Total Fee paid by a User will be:
 - Leg Fee  = MIN {0.04% * 3,000; 12.5% * 400} * 10 contracts = MIN {1.2; 50} * 10 = 1.2 * 10 = 12 USDC
 - Leg Fee  = MIN {0.04% * 3,000; 12.5% * 500} * 15 contracts = MIN {1.2; 62.5} * 15 = 1.2 * 15 = 18 USDC
-- Total Fee = MAX {12; 18} = 18 USDC
+- **Total Fee = MAX {12; 18} = 18 USDC**
 
 ## Earn
 
