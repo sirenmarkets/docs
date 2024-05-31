@@ -2,11 +2,17 @@
 
 ## Trading
 
-**Deposit Fee**: 0.0%
+### Deposit Fee
 
-**Withdrawal Fee**: 0.0% 
+0.0% (no fee)
 
-**Settlement Fee**: 0.0% 
+### Withdrawal Fee 
+
+0.0% (no fee)
+
+### Settlement Fee
+
+0.0% (no fee)
 
 ### Trading Fee
 
